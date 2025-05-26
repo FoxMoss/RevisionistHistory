@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){chrome.i18n&&chrome.i18n.getMessage&&(document.title="Confirm Email")}));

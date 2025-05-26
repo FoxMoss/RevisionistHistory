@@ -1,0 +1,148 @@
+{
+  "extName": {
+    "message": "Historie revizí",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Vyvinuto pro učitele - zobrazuje historii úprav studentů v Google Dokumentech",
+    "description": "The description of the extension"
+  },
+  "auth_fill_all": {
+    "message": "Vyplňte prosím všechna povinná pole",
+    "description": "Error message when not all fields are filled"
+  },
+  "auth_signup_banner": {
+    "message": "Vytváříte účet poprvé? I když jste Revision History používali již dříve, musíte si vytvořit účet, abyste mohli pokračovat.",
+    "description": "Banner message explaining that existing users need to create an account"
+  },
+  "auth_signup_tooltip": {
+    "message": "Aktualizovali jsme náš registrační proces. Pokud jste dříve používali Google, musíte si vytvořit nový účet s vaší e-mailovou adresou a heslem. Děkujeme, že jste věrným uživatelem!",
+    "description": "Tooltip explaining the sign-up process for existing users"
+  },
+  "auth_terms_agree": {
+    "message": "Registrací souhlasíte s našimi",
+    "description": "Text indicating agreement to terms"
+  },
+  "auth_terms_link": {
+    "message": "Podmínkami služby",
+    "description": "Link text for terms of service"
+  },
+  "auth_and": {
+    "message": "a",
+    "description": "Conjunction between terms and privacy policy"
+  },
+  "auth_privacy_link": {
+    "message": "Zásadami ochrany osobních údajů",
+    "description": "Link text for privacy policy"
+  },
+  "upgrade_modal_title": {
+    "message": "Upgrade na Plus",
+    "description": "Title of the upgrade modal"
+  },
+  "upgrade_document_count": {
+    "message": "Analyzovali jste $COUNT$ z $LIMIT$ bezplatných dokumentů tento měsíc.",
+    "description": "Shows how many documents have been analyzed out of the monthly limit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "23"
+      },
+      "LIMIT": {
+        "content": "$2",
+        "example": "150"
+      }
+    }
+  },
+  "upgrade_message": {
+    "message": "<em>Nikdy</em> jsme si nepředstavovali, že tolik učitelů bude používat náš produkt. Jsme, mírně řečeno, vděční. S více než 150 000 učiteli, kteří nyní používají Revision History, vaše předplatné odemyká neomezenou analýzu dokumentů a financuje průběžnou podporu a vylepšení.",
+    "description": "Message explaining the need for subscriptions"
+  },
+  "upgrade_value_proposition": {
+    "message": "Odemkněte neomezenou analýzu a získejte přehled o procesu psaní studentů.",
+    "description": "Value proposition for upgrading"
+  },
+  "upgrade_plan_monthly": {
+    "message": "Měsíčně",
+    "description": "Monthly plan label"
+  },
+  "upgrade_plan_annual": {
+    "message": "Ročně",
+    "description": "Annual plan label"
+  },
+  "upgrade_price_monthly": {
+    "message": "USD 4.49",
+    "description": "Monthly subscription price"
+  },
+  "upgrade_price_annual": {
+    "message": "USD 2.67",
+    "description": "Annual subscription price (per month)"
+  },
+  "upgrade_per_month": {
+    "message": "/měsíc",
+    "description": "Text indicating price is per month"
+  },
+  "upgrade_billed_annually": {
+    "message": "USD 32 účtováno ročně",
+    "description": "Text indicating annual billing amount"
+  },
+  "upgrade_save_percent": {
+    "message": "Ušetřete 40%",
+    "description": "Text showing savings percentage"
+  },
+  "upgrade_best_value": {
+    "message": "Nejlepší hodnota",
+    "description": "Label for the best value option"
+  },
+  "upgrade_feature_unlimited": {
+    "message": "Neomezená analýza dokumentů",
+    "description": "Feature: unlimited document analysis"
+  },
+  "upgrade_feature_cancel": {
+    "message": "Zrušení kdykoli",
+    "description": "Feature: ability to cancel anytime"
+  },
+  "upgrade_feature_priority": {
+    "message": "Prioritní podpora",
+    "description": "Feature: priority support"
+  },
+  "upgrade_choose_monthly": {
+    "message": "Zvolit měsíční",
+    "description": "Button text to choose monthly plan"
+  },
+  "upgrade_choose_annual": {
+    "message": "Zvolit roční",
+    "description": "Button text to choose annual plan"
+  },
+  "upgrade_schools_title": {
+    "message": "Školy a okresy",
+    "description": "Title for schools and districts section"
+  },
+  "upgrade_schools_description": {
+    "message": "Hledáte skupinové licence pro vaši školu nebo okres?",
+    "description": "Description for schools and districts section"
+  },
+  "upgrade_schools_feature_dpa": {
+    "message": "Vlastní smlouva o zpracování dat (DPA)",
+    "description": "Feature: custom data privacy agreement"
+  },
+  "upgrade_schools_feature_support": {
+    "message": "Prémiová podpora",
+    "description": "Feature: white glove support"
+  },
+  "upgrade_schools_feature_discounts": {
+    "message": "Množstevní slevy",
+    "description": "Feature: volume discounts"
+  },
+  "upgrade_contact_quote": {
+    "message": "Kontaktujte nás pro cenovou nabídku",
+    "description": "Button text to contact for a quote"
+  },
+  "upgrade_button": {
+    "message": "Upgradovat",
+    "description": "Button text for upgrading to Plus plan"
+  },
+  "tooltip_doc_counter": {
+    "message": "Bezplatní uživatelé mohou analyzovat až 150 jedinečných dokumentů za měsíc. Tento počítadlo se resetuje 1. den každého měsíce.",
+    "description": "Tooltip explaining the document counter limit"
+  }
+} 

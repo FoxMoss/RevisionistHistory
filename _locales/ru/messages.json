@@ -1,0 +1,630 @@
+{
+  "important_development_note": {
+    "message": "Voice-to-text pattern detection is intentionally excluded for Russian (and other CJK/Russian languages) due to fundamental differences in input methods and character systems. Only universal patterns (copy/paste, deletion rates, session distribution) are monitored.",
+    "description": "Documentation note about intentional exclusion of voice detection"
+  },
+  "extName": {
+    "message": "История изменений",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Разработано для учителей - показывает историю редактирования учащихся в Google Документах",
+    "description": "The description of the extension"
+  },
+  "stats_deletions": {
+    "message": "Удаления",
+    "description": "Label for number of deletions"
+  },
+  "stats_copyPaste": {
+    "message": "Крупное копирование/вставка",
+    "description": "Label for number of large copy/paste instances"
+  },
+  "stats_writingSessions": {
+    "message": "Сессии написания",
+    "description": "Label for number of writing sessions"
+  },
+  "stats_activeTime": {
+    "message": "Активное время написания",
+    "description": "Label for total active writing time"
+  },
+  "button_details": {
+    "message": "Подробности",
+    "description": "Text for details button"
+  },
+  "button_hide": {
+    "message": "Скрыть",
+    "description": "Text for hide button"
+  },
+  "section_copyPaste": {
+    "message": "Сегменты копирования/вставки",
+    "description": "Title for copy/paste section"
+  },
+  "section_writingSessions": {
+    "message": "Сессии написания",
+    "description": "Title for writing sessions section"
+  },
+  "tooltip_deletions": {
+    "message": "Удаления подсчитывают количество раз, когда текст был удален из документа (например, нажатием клавиши backspace или выделением и удалением слова или фразы).",
+    "description": "Tooltip explanation for deletions"
+  },
+  "tooltip_copyPaste": {
+    "message": "Количество крупных операций копирования/вставки. Примечание: учитываются только копирования/вставки размером от 20 слов и 150 символов.",
+    "description": "Tooltip explanation for copy/paste"
+  },
+  "tooltip_writingSessions": {
+    "message": "Сессии написания подсчитывают количество различных сеансов, во время которых вносились изменения в документ. Любая пауза более 5 минут считается новой сессией.",
+    "description": "Tooltip explanation for writing sessions"
+  },
+  "tooltip_activeTime": {
+    "message": "Активное время написания измеряет общее время, затраченное на активное написание или редактирование. Паузы более 5 минут не учитываются.",
+    "description": "Tooltip explanation for active time"
+  },
+  "status_loading": {
+    "message": "Загрузка истории изменений...",
+    "description": "Loading status message"
+  },
+  "error_notLoggedIn": {
+    "message": "Пожалуйста, войдите в Google Документы, чтобы просмотреть историю изменений.",
+    "description": "Error message when not logged in"
+  },
+  "error_noAccess": {
+    "message": "Запросите доступ к редактированию документа, чтобы просмотреть историю изменений.",
+    "description": "Error message when no edit access"
+  },
+  "login_prompt": {
+    "message": "Активируйте бесплатное воспроизведение документа сейчас",
+    "description": "Login prompt text"
+  },
+  "analytics_patterns_normal": {
+    "message": "✓ Необычных шаблонов написания не обнаружено",
+    "description": "Message shown when no unusual patterns are detected"
+  },
+  "analytics_patterns_unusual": {
+    "message": "🧠 $COUNT$ необычных $PATTERN$ написания",
+    "description": "Message shown when unusual patterns are detected",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "шаблона"
+      }
+    }
+  },
+  "analytics_patterns_unusual_no_voice": {
+    "message": "🧠 $COUNT$ необычных шаблона написания",
+    "description": "Message shown when unusual patterns are detected (excluding voice detection)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "analytics_too_short": {
+    "message": "Документ слишком короткий для анализа",
+    "description": "Message shown when document is too short for analysis"
+  },
+  "tooltip_unusual_patterns_simple": {
+    "message": "Смотрите раздел Подробности для получения дополнительной информации о моделях письма",
+    "description": "Simplified tooltip for unusual patterns, directing to Details section"
+  },
+  "tooltip_too_short": {
+    "message": "Для анализа написания требуется не менее 750 символов текста",
+    "description": "Tooltip explaining minimum text requirement"
+  },
+  "tooltip_patterns": {
+    "message": "Все шаблоны написания выглядят типичными",
+    "description": "Tooltip for normal writing patterns"
+  },
+  "tooltip_patterns_no_voice": {
+    "message": "Все шаблоны написания (кроме голосового ввода) выглядят типичными",
+    "description": "Tooltip for normal writing patterns (excluding voice detection)"
+  },
+  "section_replay": {
+    "message": "Воспроизведение",
+    "description": "Title for replay section"
+  },
+  "button_show_replay": {
+    "message": "Показать воспроизведение процесса написания",
+    "description": "Button text to show replay"
+  },
+  "section_plus_analysis": {
+    "message": "Plus анализ",
+    "description": "Title for plus analysis section"
+  },
+  "analytics_warning_context": {
+    "message": "Примечание: Индикаторы предлагают просмотреть воспроизведение процесса написания. Это не являются окончательными индикаторами какого-либо конкретного поведения.",
+    "description": "Context message shown when warnings are present"
+  },
+  "analytics_flag_details": {
+    "message": "Детали индикаторов:",
+    "description": "Title for flag details section"
+  },
+  "analytics_this_doc": {
+    "message": "Этот документ",
+    "description": "Label for current document metrics"
+  },
+  "analytics_over_60": {
+    "message": "Более 60% введенных символов было удалено",
+    "description": "Message when deletion rate is over 60%"
+  },
+  "analytics_deletion_rate": {
+    "message": "$1% введенных символов было удалено",
+    "description": "Message showing deletion rate",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      }
+    }
+  },
+  "analytics_below_threshold": {
+    "message": "Ниже порога",
+    "description": "Message when value is below threshold"
+  },
+  "analytics_above_threshold": {
+    "message": "Выше порога",
+    "description": "Message when value is above threshold"
+  },
+  "analytics_normal_range": {
+    "message": "Нормальный диапазон",
+    "description": "Message when value is in normal range"
+  },
+  "auth_login_tab": {
+    "message": "Вход",
+    "description": "Login tab label"
+  },
+  "auth_signup_tab": {
+    "message": "Регистрация",
+    "description": "Sign up tab label"
+  },
+  "auth_first_name": {
+    "message": "Имя",
+    "description": "First name field label"
+  },
+  "auth_last_name": {
+    "message": "Фамилия",
+    "description": "Last name field label"
+  },
+  "auth_email": {
+    "message": "Email",
+    "description": "Email field label"
+  },
+  "auth_password": {
+    "message": "Пароль",
+    "description": "Password field label"
+  },
+  "auth_signup_button": {
+    "message": "Зарегистрироваться",
+    "description": "Sign up button text"
+  },
+  "auth_login_button": {
+    "message": "Войти",
+    "description": "Login button text"
+  },
+  "auth_google_signin": {
+    "message": "Войти через Google",
+    "description": "Google sign in button text"
+  },
+  "auth_forgot_password": {
+    "message": "Забыли пароль?",
+    "description": "Forgot password link text"
+  },
+  "auth_have_account": {
+    "message": "Уже есть аккаунт? Войдите здесь.",
+    "description": "Sign in link text"
+  },
+  "auth_no_account": {
+    "message": "Нет аккаунта? Зарегистрируйтесь.",
+    "description": "Sign up link text"
+  },
+  "auth_terms_agree": {
+    "message": "Продолжая, вы соглашаетесь с Условиями использования и Политикой конфиденциальности Истории изменений, а также соглашаетесь получать периодические электронные письма с обновлениями.",
+    "description": "Terms agreement text"
+  },
+  "auth_terms_link": {
+    "message": "Условиями использования",
+    "description": "Link text for terms of service"
+  },
+  "auth_and": {
+    "message": "и",
+    "description": "Conjunction between terms and privacy policy"
+  },
+  "auth_privacy_link": {
+    "message": "Политикой конфиденциальности",
+    "description": "Link text for privacy policy"
+  },
+  "auth_required_field": {
+    "message": "Это поле обязательно для заполнения.",
+    "description": "Required field error message"
+  },
+  "auth_valid_email": {
+    "message": "Требуется действительный email адрес.",
+    "description": "Valid email error message"
+  },
+  "auth_fill_all": {
+    "message": "Пожалуйста, заполните все обязательные поля",
+    "description": "Error message when not all fields are filled"
+  },
+  "tooltip_pattern_rapid_text": {
+    "message": "Множественные случаи быстрого добавления больших фрагментов текста",
+    "description": "Tooltip explaining rapid text addition pattern"
+  },
+  "tooltip_pattern_large_chunks": {
+    "message": "Значительная часть текста добавлена крупными блоками",
+    "description": "Tooltip explaining large chunks pattern"
+  },
+  "tooltip_pattern_uneven": {
+    "message": "Неравномерное распределение содержимого между сессиями",
+    "description": "Tooltip explaining uneven distribution pattern"
+  },
+  "tooltip_pattern_low_deletion": {
+    "message": "Частота удалений значительно ниже среднего",
+    "description": "Tooltip explaining low deletion rate pattern"
+  },
+  "flag_result_status": {
+    "message": "Статус",
+    "description": "Label for result status"
+  },
+  "flag_result_details": {
+    "message": "Подробности",
+    "description": "Label for result details"
+  },
+  "flag_result_disabled": {
+    "message": "Отключено",
+    "description": "Status for disabled features"
+  },
+  "flag_result_voice_disabled": {
+    "message": "Обнаружение голосового ввода отключено",
+    "description": "Message explaining voice detection is disabled"
+  },
+  "flag_result_voice_excluded": {
+    "message": "Обнаружение голосового ввода исключено для русского языка",
+    "description": "Short message for voice detection exclusion"
+  },
+  "reset_password_title": {
+    "message": "Сброс пароля",
+    "description": "Title for reset password page"
+  },
+  "reset_password_instruction": {
+    "message": "Введите ваш email для получения кода сброса пароля.",
+    "description": "Instruction text for reset password page"
+  },
+  "reset_password_button": {
+    "message": "Отправить код",
+    "description": "Button text to send reset code"
+  },
+  "confirm_email_title": {
+    "message": "Подтверждение email",
+    "description": "Title for email confirmation page"
+  },
+  "enter_valid_email": {
+    "message": "Пожалуйста, введите действительный email адрес.",
+    "description": "Error message for invalid email"
+  },
+  "reset_code_sent": {
+    "message": "Код сброса отправлен на ваш email.",
+    "description": "Success message after sending reset code"
+  },
+  "enter_reset_code": {
+    "message": "Введите код сброса, отправленный на ваш email",
+    "description": "Instruction for entering reset code"
+  },
+  "reset_code_label": {
+    "message": "Код сброса",
+    "description": "Label for reset code input field"
+  },
+  "verify_code_button": {
+    "message": "Проверить",
+    "description": "Button text to verify reset code"
+  },
+  "password_reset_success": {
+    "message": "Пароль успешно сброшен",
+    "description": "Success message after password reset"
+  },
+  "new_password_label": {
+    "message": "Новый пароль",
+    "description": "Label for new password input"
+  },
+  "confirm_password_label": {
+    "message": "Подтвердите пароль",
+    "description": "Label for confirm password input"
+  },
+  "save_password_button": {
+    "message": "Сохранить пароль",
+    "description": "Button text to save new password"
+  },
+  "passwords_must_match": {
+    "message": "Пароли должны совпадать",
+    "description": "Error message when passwords don't match"
+  },
+  "page_title_reset_password": {
+    "message": "История изменений - Сброс пароля",
+    "description": "Browser tab title for reset password page"
+  },
+  "page_title_confirm_email": {
+    "message": "История изменений - Подтверждение email",
+    "description": "Browser tab title for confirm email page"
+  },
+  "confirm_email_check_inbox": {
+    "message": "Проверьте вашу почту",
+    "description": "Title for check inbox page"
+  },
+  "confirm_email_code_sent": {
+    "message": "Мы отправили 6-значный код подтверждения на $EMAIL$. Пожалуйста, введите его ниже.",
+    "description": "Message indicating code has been sent",
+    "placeholders": {
+      "EMAIL": {
+        "content": "$1",
+        "example": "user@example.com"
+      }
+    }
+  },
+  "confirm_email_code_resent": {
+    "message": "Код подтверждения отправлен повторно. Если вы не видите его во входящих, проверьте папку спам.",
+    "description": "Message shown when code is resent"
+  },
+  "confirm_email_no_code": {
+    "message": "Не получили код?",
+    "description": "Text for resend code prompt"
+  },
+  "confirm_email_resend": {
+    "message": "Отправить код повторно",
+    "description": "Text for resend code link"
+  },
+  "confirm_email_success": {
+    "message": "Email подтвержден",
+    "description": "Title for success page"
+  },
+  "confirm_email_success_message": {
+    "message": "Ваш email успешно подтвержден. Теперь вы можете войти в систему.",
+    "description": "Success message after email confirmation"
+  },
+  "confirm_email_verify": {
+    "message": "Подтвердить email",
+    "description": "Button text to verify email"
+  },
+  "flag_voice_to_text": {
+    "message": "Голос в текст: $REASON$",
+    "description": "Flag for voice-to-text pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Инкрементальные добавления"
+      }
+    }
+  },
+  "flag_voice_to_text_explanation": {
+    "message": "Для русского языка обнаружение голосового ввода не выполняется из-за фундаментальных различий в методах ввода",
+    "description": "Explanation for voice to text detection being disabled"
+  },
+  "analytics_voice_detected": {
+    "message": "Обнаружено несколько случаев инкрементального добавления текста",
+    "description": "Message when voice patterns are detected"
+  },
+  "analytics_no_voice_patterns": {
+    "message": "Шаблоны голосового ввода не обнаружены",
+    "description": "Message when no voice patterns are found"
+  },
+  "analytics_calculating": {
+    "message": "Вычисление шаблонов написания...",
+    "description": "Message while calculating analytics"
+  },
+  "flag_editing_pattern_title": {
+    "message": "Шаблон редактирования:",
+    "description": "Title for editing pattern flag"
+  },
+  "flag_text_addition_title": {
+    "message": "Шаблон добавления текста:",
+    "description": "Title for text addition pattern flag"
+  },
+  "flag_content_addition_title": {
+    "message": "Шаблон добавления контента:",
+    "description": "Title for content addition pattern flag"
+  },
+  "flag_voice_pattern_title": {
+    "message": "Шаблон голосового ввода:",
+    "description": "Title for voice input pattern flag"
+  },
+  "flag_deletion_pattern_title": {
+    "message": "Шаблон удаления:",
+    "description": "Title for deletion pattern flag"
+  },
+  "flag_editing_pattern_explanation": {
+    "message": "Анализ частоты и характера редактирования текста",
+    "description": "Explanation for editing pattern flag"
+  },
+  "flag_text_addition_explanation": {
+    "message": "Анализ скорости и характера добавления текста",
+    "description": "Explanation for text addition pattern flag"
+  },
+  "flag_content_addition_explanation": {
+    "message": "Анализ объема и распределения добавляемого контента",
+    "description": "Explanation for content addition pattern flag"
+  },
+  "flag_session_distribution_explanation": {
+    "message": "Анализ распределения работы между сессиями",
+    "description": "Explanation for session distribution pattern flag"
+  },
+  "flag_editing_pattern": {
+    "message": "🧠 Шаблон редактирования: $REASON$",
+    "description": "Flag for unusual editing pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Низкий уровень удалений"
+      }
+    }
+  },
+  "flag_text_addition": {
+    "message": "🧠 Шаблон добавления текста: $REASON$",
+    "description": "Flag for unusual text addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Быстрые крупные добавления"
+      }
+    }
+  },
+  "flag_content_addition": {
+    "message": "🧠 Шаблон добавления контента: $REASON$",
+    "description": "Flag for unusual content addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Большие блоки"
+      }
+    }
+  },
+  "flag_session_distribution": {
+    "message": "🧠 Распределение сессий написания: $REASON$",
+    "description": "Flag for unusual session distribution",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Неравномерное распределение"
+      }
+    }
+  },
+  "tooltip_flag_editing_pattern": {
+    "message": "Измеряет соотношение удаленного и добавленного текста. Низкий уровень удалений может указывать на подготовленный контент, а высокий — на обширное редактирование.",
+    "description": "Tooltip for editing pattern flag"
+  },
+  "tooltip_flag_text_addition": {
+    "message": "Определяет быстрое появление больших объемов текста. Помогает отличить набранный вручную текст от скопированного или добавленного сразу.",
+    "description": "Tooltip for text addition flag"
+  },
+  "tooltip_flag_content_addition": {
+    "message": "Показывает, когда значительные части документа были добавлены крупными блоками, а не постепенно. Помогает определить, был ли контент разработан в документе или подготовлен в другом месте.",
+    "description": "Tooltip for content addition flag"
+  },
+  "tooltip_flag_session_distribution": {
+    "message": "Анализирует распределение работы по разным сессиям. Неравномерное распределение может указывать на то, что части контента были разработаны вне основного процесса написания.",
+    "description": "Tooltip for session distribution flag"
+  },
+  "tooltip_flag_voice_to_text": {
+    "message": "Обнаруживает признаки использования голосового ввода, такие как появление текста небольшими порциями с малым количеством удалений и характерными ошибками.",
+    "description": "Tooltip for voice-to-text flag"
+  },
+  "auth_signup_banner": {
+    "message": "Создаете аккаунт впервые? Даже если вы уже использовали Revision History, вам необходимо создать аккаунт, чтобы продолжить.",
+    "description": "Banner message explaining that existing users need to create an account"
+  },
+  "auth_signup_tooltip": {
+    "message": "Мы обновили процесс регистрации. Если вы ранее использовали Google, вам нужно создать новую учетную запись с вашей электронной почтой и паролем. Спасибо, что остаетесь с нами!",
+    "description": "Tooltip explaining the sign-up process for existing users"
+  },
+  "upgrade_modal_title": {
+    "message": "Перейти на Plus",
+    "description": "Title of the upgrade modal"
+  },
+  "upgrade_document_count": {
+    "message": "Вы проанализировали $COUNT$ из $LIMIT$ бесплатных документов в этом месяце.",
+    "description": "Shows how many documents have been analyzed out of the monthly limit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "23"
+      },
+      "LIMIT": {
+        "content": "$2",
+        "example": "150"
+      }
+    }
+  },
+  "upgrade_message": {
+    "message": "Мы <em>никогда</em> не представляли, что так много педагогов будут использовать наш продукт. Мы благодарны, если говорить мягко. С более чем 150 000 педагогов, использующих Revision History, подписка открывает неограниченный анализ документов и финансирует постоянную поддержку и улучшения.",
+    "description": "Message explaining the need for subscriptions"
+  },
+  "upgrade_value_proposition": {
+    "message": "Разблокируйте неограниченный анализ и получите представление о процессе письма ваших учеников.",
+    "description": "Value proposition for upgrading"
+  },
+  "upgrade_plan_monthly": {
+    "message": "Ежемесячно",
+    "description": "Monthly plan label"
+  },
+  "upgrade_plan_annual": {
+    "message": "Ежегодно",
+    "description": "Annual plan label"
+  },
+  "upgrade_price_monthly": {
+    "message": "USD 4.49",
+    "description": "Monthly subscription price"
+  },
+  "upgrade_price_annual": {
+    "message": "USD 2.67",
+    "description": "Annual subscription price (per month)"
+  },
+  "upgrade_per_month": {
+    "message": "/месяц",
+    "description": "Text indicating price is per month"
+  },
+  "upgrade_billed_annually": {
+    "message": "USD 32 в год",
+    "description": "Text indicating annual billing amount"
+  },
+  "upgrade_save_percent": {
+    "message": "Экономия 40%",
+    "description": "Text showing savings percentage"
+  },
+  "upgrade_best_value": {
+    "message": "Лучшая цена",
+    "description": "Label for the best value option"
+  },
+  "upgrade_feature_unlimited": {
+    "message": "Неограниченный анализ документов",
+    "description": "Feature: unlimited document analysis"
+  },
+  "upgrade_feature_cancel": {
+    "message": "Отмена в любое время",
+    "description": "Feature: ability to cancel anytime"
+  },
+  "upgrade_feature_priority": {
+    "message": "Приоритетная поддержка",
+    "description": "Feature: priority support"
+  },
+  "upgrade_choose_monthly": {
+    "message": "Выбрать ежемесячный план",
+    "description": "Button text to choose monthly plan"
+  },
+  "upgrade_choose_annual": {
+    "message": "Выбрать годовой план",
+    "description": "Button text to choose annual plan"
+  },
+  "upgrade_schools_title": {
+    "message": "Школы и округа",
+    "description": "Title for schools and districts section"
+  },
+  "upgrade_schools_description": {
+    "message": "Ищете групповую лицензию для вашей школы или округа?",
+    "description": "Description for schools and districts section"
+  },
+  "upgrade_schools_feature_dpa": {
+    "message": "Индивидуальное соглашение о конфиденциальности данных (DPA)",
+    "description": "Feature: custom data privacy agreement"
+  },
+  "upgrade_schools_feature_support": {
+    "message": "Премиум-поддержка",
+    "description": "Feature: white glove support"
+  },
+  "upgrade_schools_feature_discounts": {
+    "message": "Скидки на объем",
+    "description": "Feature: volume discounts"
+  },
+  "upgrade_contact_quote": {
+    "message": "Свяжитесь с нами для получения предложения",
+    "description": "Button text to contact for a quote"
+  },
+  "upgrade_button": {
+    "message": "Обновить",
+    "description": "Button text for upgrading to Plus plan"
+  },
+  "tooltip_doc_counter": {
+    "message": "Бесплатные пользователи могут анализировать до 150 уникальных документов в месяц. Этот счетчик сбрасывается 1-го числа каждого месяца.",
+    "description": "Tooltip explaining the document counter limit"
+  }
+} 

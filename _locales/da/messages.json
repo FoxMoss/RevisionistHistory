@@ -1,0 +1,576 @@
+{
+  "important_development_note": {
+    "message": "Tale-til-tekst mønstergenkendelse er bevidst udeladt for CJK/russiske sprog på grund af grundlæggende forskelle i inputmetoder og tegnsystemer. Kun universelle mønstre (kopiér/indsæt, sletningsfrekvens, sessionsfordeling) overvåges.",
+    "description": "Documentation note about intentional exclusion of voice detection"
+  },
+  "extName": {
+    "message": "Revisionshistorik",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Udviklet til lærere - viser elevers redigeringshistorik i Google Docs",
+    "description": "The description of the extension"
+  },
+  "stats_deletions": {
+    "message": "Sletninger",
+    "description": "Label for number of deletions"
+  },
+  "stats_copyPaste": {
+    "message": "Store kopiér/indsæt",
+    "description": "Label for number of large copy/paste instances"
+  },
+  "stats_writingSessions": {
+    "message": "Skrivesessioner",
+    "description": "Label for number of writing sessions"
+  },
+  "stats_activeTime": {
+    "message": "Aktiv skrivetid",
+    "description": "Label for total active writing time"
+  },
+  "button_details": {
+    "message": "Detaljer",
+    "description": "Text for details button"
+  },
+  "button_hide": {
+    "message": "Skjul",
+    "description": "Text for hide button"
+  },
+  "section_copyPaste": {
+    "message": "Kopiér/indsæt-segmenter",
+    "description": "Title for copy/paste section"
+  },
+  "section_writingSessions": {
+    "message": "Skrivesessioner",
+    "description": "Title for writing sessions section"
+  },
+  "tooltip_deletions": {
+    "message": "Sletninger tæller antallet af gange tekst er blevet fjernet fra dokumentet (for eksempel ved at trykke på tilbagetasten eller markere og slette et ord eller en sætning).",
+    "description": "Tooltip explanation for deletions"
+  },
+  "tooltip_copyPaste": {
+    "message": "Antal store kopiér/indsæt-operationer. Bemærk: tæller kun kopiering/indsættelse af 20 eller flere ord og 150 eller flere tegn.",
+    "description": "Tooltip explanation for copy/paste"
+  },
+  "tooltip_writingSessions": {
+    "message": "Skrivesessioner tæller antallet af forskellige sessioner, hvor der er foretaget ændringer i et dokument. Enhver pause længere end 5 minutter tæller som en ny session.",
+    "description": "Tooltip explanation for writing sessions"
+  },
+  "tooltip_activeTime": {
+    "message": "Aktiv skrivetid måler den samlede tid brugt på aktiv skrivning eller redigering. Pauser længere end 5 minutter tælles ikke med.",
+    "description": "Tooltip explanation for active time"
+  },
+  "status_loading": {
+    "message": "Indlæser revisionshistorik...",
+    "description": "Loading status message"
+  },
+  "error_notLoggedIn": {
+    "message": "Log ind på Google Docs for at se revisionshistorikken.",
+    "description": "Error message when not logged in"
+  },
+  "error_noAccess": {
+    "message": "Anmod om redigeringsadgang til dokumentet for at se revisionshistorikken.",
+    "description": "Error message when no edit access"
+  },
+  "login_prompt": {
+    "message": "Klik her for at logge ind på Revisionshistorik",
+    "description": "Login prompt text"
+  },
+  "analytics_patterns_normal": {
+    "message": "✓ Ingen usædvanlige skrivemønstre opdaget",
+    "description": "Message shown when no unusual patterns are detected"
+  },
+  "analytics_patterns_unusual": {
+    "message": "🧠 $COUNT$ usædvanlige skrivemønstre",
+    "description": "Message shown when unusual patterns are detected",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "analytics_too_short": {
+    "message": "Dokumentet er for kort til analyse",
+    "description": "Message shown when document is too short for analysis"
+  },
+  "tooltip_unusual_patterns_simple": {
+    "message": "Se Detaljer for mere information om skrivemønstrene",
+    "description": "Simplified tooltip for unusual patterns, directing to Details section"
+  },
+  "tooltip_too_short": {
+    "message": "Skriveanalyse kræver mindst 750 tegn tekst",
+    "description": "Tooltip explaining minimum text requirement"
+  },
+  "tooltip_patterns": {
+    "message": "Alle skrivemønstre ser typiske ud",
+    "description": "Tooltip for normal writing patterns"
+  },
+  "section_replay": {
+    "message": "Afspilning",
+    "description": "Title for replay section"
+  },
+  "button_show_replay": {
+    "message": "Vis afspilning af skriveproces",
+    "description": "Button text to show replay"
+  },
+  "section_plus_analysis": {
+    "message": "Plus-analyse",
+    "description": "Title for plus analysis section"
+  },
+  "analytics_warning_context": {
+    "message": "Bemærk: Indikatorerne foreslår at gennemgå afspilningen af skriveprocessen. Dette er ikke definitive indikatorer på nogen specifik adfærd.",
+    "description": "Context message shown when warnings are present"
+  },
+  "analytics_flag_details": {
+    "message": "Indikatordetaljer:",
+    "description": "Title for flag details section"
+  },
+  "analytics_this_doc": {
+    "message": "Dette dokument",
+    "description": "Label for current document metrics"
+  },
+  "analytics_over_60": {
+    "message": "Mere end 60% af indtastede tegn er blevet slettet",
+    "description": "Message when deletion rate is over 60%"
+  },
+  "analytics_deletion_rate": {
+    "message": "$1% af indtastede tegn er blevet slettet",
+    "description": "Message showing deletion rate",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      }
+    }
+  },
+  "analytics_below_threshold": {
+    "message": "Under tærskelværdi",
+    "description": "Message when value is below threshold"
+  },
+  "analytics_above_threshold": {
+    "message": "Over tærskelværdi",
+    "description": "Message when value is above threshold"
+  },
+  "analytics_normal_range": {
+    "message": "Normalt interval",
+    "description": "Message when value is in normal range"
+  },
+  "auth_login_tab": {
+    "message": "Log ind",
+    "description": "Login tab label"
+  },
+  "auth_signup_tab": {
+    "message": "Opret konto",
+    "description": "Sign up tab label"
+  },
+  "auth_first_name": {
+    "message": "Fornavn",
+    "description": "First name field label"
+  },
+  "auth_last_name": {
+    "message": "Efternavn",
+    "description": "Last name field label"
+  },
+  "auth_email": {
+    "message": "E-mailadresse",
+    "description": "Email field label"
+  },
+  "auth_password": {
+    "message": "Adgangskode",
+    "description": "Password field label"
+  },
+  "auth_signup_button": {
+    "message": "Opret konto",
+    "description": "Sign up button text"
+  },
+  "auth_login_button": {
+    "message": "Log ind",
+    "description": "Login button text"
+  },
+  "auth_google_signin": {
+    "message": "Log ind med Google",
+    "description": "Google sign in button text"
+  },
+  "auth_forgot_password": {
+    "message": "Glemt adgangskode?",
+    "description": "Forgot password link text"
+  },
+  "auth_have_account": {
+    "message": "Har du allerede en konto? Log ind her.",
+    "description": "Sign in link text"
+  },
+  "auth_no_account": {
+    "message": "Ingen konto? Opret en.",
+    "description": "Sign up link text"
+  },
+  "auth_terms_agree": {
+    "message": "Ved at fortsætte accepterer du Revisionshistoriks brugervilkår og privatlivspolitik og giver samtykke til at modtage periodiske e-mailopdateringer.",
+    "description": "Terms agreement text"
+  },
+  "auth_terms_link": {
+    "message": "Brugervilkår",
+    "description": "Terms of service link text"
+  },
+  "auth_and": {
+    "message": "og",
+    "description": "Conjunction between terms and privacy policy"
+  },
+  "auth_privacy_link": {
+    "message": "Privatlivspolitik",
+    "description": "Privacy policy link text"
+  },
+  "auth_required_field": {
+    "message": "Dette felt er påkrævet.",
+    "description": "Required field error message"
+  },
+  "auth_valid_email": {
+    "message": "Indtast en gyldig e-mailadresse.",
+    "description": "Valid email error message"
+  },
+  "auth_fill_all": {
+    "message": "Udfyld venligst alle påkrævede felter",
+    "description": "Error message when not all fields are filled"
+  },
+  "tooltip_pattern_rapid_text": {
+    "message": "Flere tilfælde af hurtig tilføjelse af store tekstdele",
+    "description": "Tooltip explaining rapid text addition pattern"
+  },
+  "tooltip_pattern_large_chunks": {
+    "message": "Betydelig del af teksten tilføjet i store blokke",
+    "description": "Tooltip explaining large chunks pattern"
+  },
+  "tooltip_pattern_uneven": {
+    "message": "Ujævn fordeling af indhold mellem sessioner",
+    "description": "Tooltip explaining uneven distribution pattern"
+  },
+  "tooltip_pattern_low_deletion": {
+    "message": "Sletningsfrekvens betydeligt under gennemsnittet",
+    "description": "Tooltip explaining low deletion rate pattern"
+  },
+  "flag_editing_pattern_explanation": {
+    "message": "Analyse af frekvens og mønstre for tekstredigering",
+    "description": "Explanation for editing pattern flag"
+  },
+  "flag_text_addition_explanation": {
+    "message": "Analyse af hastighed og mønstre for teksttilføjelse",
+    "description": "Explanation for text addition pattern flag"
+  },
+  "flag_content_addition_explanation": {
+    "message": "Analyse af volumen og fordeling af tilføjet indhold",
+    "description": "Explanation for content addition pattern flag"
+  },
+  "flag_session_distribution_explanation": {
+    "message": "Analyse af arbejdsfordeling mellem sessioner",
+    "description": "Explanation for session distribution pattern flag"
+  },
+  "reset_password_title": {
+    "message": "Nulstil adgangskode",
+    "description": "Title for reset password page"
+  },
+  "reset_password_instruction": {
+    "message": "Indtast din e-mailadresse for at modtage en nulstillingskode.",
+    "description": "Instruction text for reset password page"
+  },
+  "reset_password_button": {
+    "message": "Send kode",
+    "description": "Button text to send reset code"
+  },
+  "confirm_email_title": {
+    "message": "Bekræft e-mail",
+    "description": "Title for email confirmation page"
+  },
+  "enter_valid_email": {
+    "message": "Indtast en gyldig e-mailadresse.",
+    "description": "Error message for invalid email"
+  },
+  "reset_code_sent": {
+    "message": "Nulstillingskoden er blevet sendt til din e-mail.",
+    "description": "Success message after sending reset code"
+  },
+  "enter_reset_code": {
+    "message": "Indtast nulstillingskoden som blev sendt til din e-mail",
+    "description": "Instruction for entering reset code"
+  },
+  "reset_code_label": {
+    "message": "Nulstillingskode",
+    "description": "Label for reset code input field"
+  },
+  "verify_code_button": {
+    "message": "Verificér",
+    "description": "Button text to verify reset code"
+  },
+  "password_reset_success": {
+    "message": "Adgangskoden er blevet nulstillet",
+    "description": "Success message after password reset"
+  },
+  "new_password_label": {
+    "message": "Ny adgangskode",
+    "description": "Label for new password input"
+  },
+  "confirm_password_label": {
+    "message": "Bekræft adgangskode",
+    "description": "Label for confirm password input"
+  },
+  "save_password_button": {
+    "message": "Gem adgangskode",
+    "description": "Button text to save new password"
+  },
+  "passwords_must_match": {
+    "message": "Adgangskoderne skal være ens",
+    "description": "Error message when passwords don't match"
+  },
+  "page_title_reset_password": {
+    "message": "Revisionshistorik - Nulstil adgangskode",
+    "description": "Browser tab title for reset password page"
+  },
+  "page_title_confirm_email": {
+    "message": "Revisionshistorik - Bekræft e-mail",
+    "description": "Browser tab title for confirm email page"
+  },
+  "confirm_email_check_inbox": {
+    "message": "Tjek din indbakke",
+    "description": "Title for check inbox page"
+  },
+  "confirm_email_code_sent": {
+    "message": "Vi har sendt en 6-cifret verifikationskode til $EMAIL$. Indtast den nedenfor.",
+    "description": "Message indicating code has been sent",
+    "placeholders": {
+      "EMAIL": {
+        "content": "$1",
+        "example": "user@example.com"
+      }
+    }
+  },
+  "confirm_email_code_resent": {
+    "message": "Verifikationskoden er blevet sendt igen. Hvis du ikke kan finde den i indbakken, tjek din spam-mappe.",
+    "description": "Message shown when code is resent"
+  },
+  "confirm_email_no_code": {
+    "message": "Ikke modtaget kode?",
+    "description": "Text for resend code prompt"
+  },
+  "confirm_email_resend": {
+    "message": "Send kode igen",
+    "description": "Text for resend code link"
+  },
+  "confirm_email_success": {
+    "message": "E-mail bekræftet",
+    "description": "Title for success page"
+  },
+  "confirm_email_success_message": {
+    "message": "Din e-mailadresse er blevet verificeret. Du kan nu logge ind.",
+    "description": "Success message after email confirmation"
+  },
+  "confirm_email_verify": {
+    "message": "Verificér e-mail",
+    "description": "Button text to verify email"
+  },
+  "flag_editing_pattern_title": {
+    "message": "Redigeringsmønster:",
+    "description": "Title for editing pattern flag"
+  },
+  "flag_text_addition_title": {
+    "message": "Teksttilføjelse:",
+    "description": "Title for text addition pattern flag"
+  },
+  "flag_content_addition_title": {
+    "message": "Indholdstilføjelse:",
+    "description": "Title for content addition pattern flag"
+  },
+  "flag_session_distribution_title": {
+    "message": "Sessionsfordeling:",
+    "description": "Title for session distribution pattern flag"
+  },
+  "flag_voice_to_text_title": {
+    "message": "Tale til tekst:",
+    "description": "Title for voice-to-text pattern flag"
+  },
+  "flag_editing_pattern": {
+    "message": "🧠 Redigeringsmønster: $REASON$",
+    "description": "Flag for unusual editing pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Lav sletningsfrekvens"
+      }
+    }
+  },
+  "flag_text_addition": {
+    "message": "🧠 Teksttilføjelse: $REASON$",
+    "description": "Flag for unusual text addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Hurtige store tilføjelser"
+      }
+    }
+  },
+  "flag_content_addition": {
+    "message": "🧠 Indholdstilføjelse: $REASON$",
+    "description": "Flag for unusual content addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Store blokke"
+      }
+    }
+  },
+  "flag_session_distribution": {
+    "message": "🧠 Sessionsfordeling: $REASON$",
+    "description": "Flag for unusual session distribution",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Ujævn fordeling"
+      }
+    }
+  },
+  "flag_voice_to_text": {
+    "message": "Tale til tekst: $REASON$",
+    "description": "Flag for voice-to-text pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Trinvise tilføjelser"
+      }
+    }
+  },
+  "tooltip_flag_editing_pattern": {
+    "message": "Måler hvor meget tekst der slettes sammenlignet med hvad der tilføjes. Lave sletningsrater kan indikere forberedt indhold, mens høje rater kan vise omfattende revisioner eller redigeringer.",
+    "description": "Tooltip for editing pattern flag"
+  },
+  "tooltip_flag_text_addition": {
+    "message": "Identificerer hvornår store mængder tekst vises hurtigt. Dette hjælper med at skelne mellem indtastet indhold og tekst, der er kopieret fra en anden kilde eller tilføjet på én gang.",
+    "description": "Tooltip for text addition flag"
+  },
+  "tooltip_flag_content_addition": {
+    "message": "Viser hvornår betydelige dele af dokumentet blev tilføjet i store blokke i stedet for gradvist. Dette hjælper med at identificere, om indholdet blev udviklet i dokumentet eller forberedt andetsteds.",
+    "description": "Tooltip for content addition flag"
+  },
+  "tooltip_flag_session_distribution": {
+    "message": "Undersøger hvordan skrivningen er fordelt over forskellige arbejdssessioner. Ujævn fordeling kan indikere, at dele blev udviklet uden for den primære skriveproces.",
+    "description": "Tooltip for session distribution flag"
+  },
+  "tooltip_flag_voice_to_text": {
+    "message": "Opdager typiske mønstre for tale-til-tekst-værktøjer, såsom tekst der vises i små fragmenter med få sletninger og karakteristiske fejlmønstre.",
+    "description": "Tooltip for voice-to-text flag"
+  },
+  "auth_signup_banner": {
+    "message": "Opretter du en konto for første gang? Selv hvis du har brugt Revision History før, skal du oprette en konto for at fortsætte.",
+    "description": "Banner message explaining that existing users need to create an account"
+  },
+  "auth_signup_tooltip": {
+    "message": "Vi har opdateret vores tilmeldingsproces. Hvis du tidligere brugte Google, skal du oprette en ny konto med din e-mail og adgangskode. Tak fordi du er en loyal bruger!",
+    "description": "Tooltip explaining the sign-up process for existing users"
+  },
+  "upgrade_modal_title": {
+    "message": "Opgrader til Plus",
+    "description": "Title of the upgrade modal"
+  },
+  "upgrade_document_count": {
+    "message": "Du har analyseret $COUNT$ af $LIMIT$ gratis dokumenter denne måned.",
+    "description": "Shows how many documents have been analyzed out of the monthly limit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "23"
+      },
+      "LIMIT": {
+        "content": "$2",
+        "example": "150"
+      }
+    }
+  },
+  "upgrade_message": {
+    "message": "Vi havde <em>aldrig</em> forestillet os, at så mange undervisere ville bruge vores produkt. Vi er taknemmelige, mildt sagt. Med over 150.000 undervisere, der nu bruger Revision History, låser dit abonnement op for ubegrænset dokumentanalyse og finansierer løbende support og forbedringer.",
+    "description": "Message explaining the need for subscriptions"
+  },
+  "upgrade_value_proposition": {
+    "message": "Lås op for ubegrænset analyse og få indsigt i dine elevers skriveproces.",
+    "description": "Value proposition for upgrading"
+  },
+  "upgrade_plan_monthly": {
+    "message": "Månedligt",
+    "description": "Monthly plan label"
+  },
+  "upgrade_plan_annual": {
+    "message": "Årligt",
+    "description": "Annual plan label"
+  },
+  "upgrade_price_monthly": {
+    "message": "USD 4.49",
+    "description": "Monthly subscription price"
+  },
+  "upgrade_price_annual": {
+    "message": "USD 2.67",
+    "description": "Annual subscription price (per month)"
+  },
+  "upgrade_per_month": {
+    "message": "/måned",
+    "description": "Text indicating price is per month"
+  },
+  "upgrade_billed_annually": {
+    "message": "USD 32 faktureret årligt",
+    "description": "Text indicating annual billing amount"
+  },
+  "upgrade_save_percent": {
+    "message": "Spar 40%",
+    "description": "Text showing savings percentage"
+  },
+  "upgrade_best_value": {
+    "message": "Bedste værdi",
+    "description": "Label for the best value option"
+  },
+  "upgrade_feature_unlimited": {
+    "message": "Ubegrænset dokumentanalyse",
+    "description": "Feature: unlimited document analysis"
+  },
+  "upgrade_feature_cancel": {
+    "message": "Annuller når som helst",
+    "description": "Feature: ability to cancel anytime"
+  },
+  "upgrade_feature_priority": {
+    "message": "Prioriteret support",
+    "description": "Feature: priority support"
+  },
+  "upgrade_choose_monthly": {
+    "message": "Vælg månedligt",
+    "description": "Button text to choose monthly plan"
+  },
+  "upgrade_choose_annual": {
+    "message": "Vælg årligt",
+    "description": "Button text to choose annual plan"
+  },
+  "upgrade_schools_title": {
+    "message": "Skoler & Distrikter",
+    "description": "Title for schools and districts section"
+  },
+  "upgrade_schools_description": {
+    "message": "Leder du efter en gruppelicens til din skole eller distrikt?",
+    "description": "Description for schools and districts section"
+  },
+  "upgrade_schools_feature_dpa": {
+    "message": "Tilpasset databehandleraftale (DPA)",
+    "description": "Feature: custom data privacy agreement"
+  },
+  "upgrade_schools_feature_support": {
+    "message": "Premium support",
+    "description": "Feature: white glove support"
+  },
+  "upgrade_schools_feature_discounts": {
+    "message": "Mængderabatter",
+    "description": "Feature: volume discounts"
+  },
+  "upgrade_contact_quote": {
+    "message": "Kontakt os for et tilbud",
+    "description": "Button text to contact for a quote"
+  },
+  "upgrade_button": {
+    "message": "Opgrader",
+    "description": "Button text for upgrading to Plus plan"
+  },
+  "tooltip_doc_counter": {
+    "message": "Gratis brugere kan analysere op til 150 unikke dokumenter pr. måned. Denne tæller nulstilles den 1. i hver måned.",
+    "description": "Tooltip explaining the document counter limit"
+  }
+} 

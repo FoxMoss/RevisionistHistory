@@ -1,0 +1,608 @@
+{
+  "important_development_note": {
+    "message": "Voice-to-text pattern detection is intentionally excluded for Japanese (and other CJK/Russian languages) due to fundamental differences in input methods and character systems. Only universal patterns (copy/paste, deletion rates, session distribution) are monitored.",
+    "description": "Documentation note about intentional exclusion of voice detection"
+  },
+  "extName": {
+    "message": "改訂履歴",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "教師向けに開発 - Google ドキュメントでの学生の編集履歴を表示",
+    "description": "The description of the extension"
+  },
+  "stats_deletions": {
+    "message": "削除回数",
+    "description": "Label for number of deletions"
+  },
+  "stats_copyPaste": {
+    "message": "大規模なコピー/貼り付け",
+    "description": "Label for number of large copy/paste instances"
+  },
+  "stats_writingSessions": {
+    "message": "作業セッション",
+    "description": "Label for number of writing sessions"
+  },
+  "stats_activeTime": {
+    "message": "実作業時間",
+    "description": "Label for total active writing time"
+  },
+  "button_details": {
+    "message": "詳細",
+    "description": "Text for details button"
+  },
+  "button_hide": {
+    "message": "非表示",
+    "description": "Text for hide button"
+  },
+  "section_copyPaste": {
+    "message": "コピー/貼り付けセグメント",
+    "description": "Title for copy/paste section"
+  },
+  "section_writingSessions": {
+    "message": "作業セッション",
+    "description": "Title for writing sessions section"
+  },
+  "tooltip_deletions": {
+    "message": "削除回数は、テキストが文書から削除された回数をカウントします（バックスペースキーを押す、または単語やフレーズを選択して削除するなど）。",
+    "description": "Tooltip explanation for deletions"
+  },
+  "tooltip_copyPaste": {
+    "message": "大規模なコピー/貼り付けの回数。注：20語以上かつ150文字以上のコピー/貼り付けのみをカウントします。",
+    "description": "Tooltip explanation for copy/paste"
+  },
+  "tooltip_writingSessions": {
+    "message": "作業セッションは、文書に変更が加えられた異なるセッションの数をカウントします。5分以上の休止は新しいセッションとしてカウントされます。",
+    "description": "Tooltip explanation for writing sessions"
+  },
+  "tooltip_activeTime": {
+    "message": "実作業時間は、アクティブな作業や編集に費やされた合計時間を測定します。5分以上の休止は計測されません。",
+    "description": "Tooltip explanation for active time"
+  },
+  "status_loading": {
+    "message": "改訂履歴を読み込み中...",
+    "description": "Loading status message"
+  },
+  "error_notLoggedIn": {
+    "message": "改訂履歴を表示するには、Google ドキュメントにログインしてください。",
+    "description": "Error message when not logged in"
+  },
+  "error_noAccess": {
+    "message": "改訂履歴を表示するには、文書の編集権限をリクエストしてください。",
+    "description": "Error message when no edit access"
+  },
+  "login_prompt": {
+    "message": "無料のドキュメント再生を今すぐ有効化",
+    "description": "Login prompt text"
+  },
+  "analytics_patterns_normal": {
+    "message": "✓ 異常な作業パターンは検出されませんでした",
+    "description": "Message shown when no unusual patterns are detected"
+  },
+  "analytics_patterns_unusual": {
+    "message": "🧠 $COUNT$件の異常な作業$PATTERN$",
+    "description": "Message shown when unusual patterns are detected",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "パターン"
+      }
+    }
+  },
+  "analytics_patterns_unusual_no_voice": {
+    "message": "🧠 $COUNT$件の異常な作業パターン",
+    "description": "Message shown when unusual patterns are detected (excluding voice detection)",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "analytics_too_short": {
+    "message": "ドキュメントが短すぎて分析できません",
+    "description": "Message shown when document is too short for analysis"
+  },
+  "tooltip_unusual_patterns_simple": {
+    "message": "執筆パターンの詳細情報については「詳細」をご覧ください",
+    "description": "Simplified tooltip for unusual patterns, directing to Details section"
+  },
+  "tooltip_too_short": {
+    "message": "作業分析には750文字以上のテキストが必要です",
+    "description": "Tooltip explaining minimum text requirement"
+  },
+  "tooltip_patterns": {
+    "message": "すべての作業パターンが通常の範囲内です",
+    "description": "Tooltip for normal writing patterns"
+  },
+  "section_replay": {
+    "message": "再生",
+    "description": "Title for replay section"
+  },
+  "button_show_replay": {
+    "message": "作業プロセスの再生を表示",
+    "description": "Button text to show replay"
+  },
+  "section_plus_analysis": {
+    "message": "Plus分析",
+    "description": "Title for plus analysis section"
+  },
+  "analytics_warning_context": {
+    "message": "注：これらの指標は作業プロセスの再生を確認することを推奨しています。これらは特定の行動を確定的に示すものではありません。",
+    "description": "Context message shown when warnings are present"
+  },
+  "analytics_flag_details": {
+    "message": "指標の詳細：",
+    "description": "Title for flag details section"
+  },
+  "analytics_this_doc": {
+    "message": "この文書",
+    "description": "Label for current document metrics"
+  },
+  "analytics_over_60": {
+    "message": "入力された文字の60%以上が削除されました",
+    "description": "Message when deletion rate is over 60%"
+  },
+  "analytics_deletion_rate": {
+    "message": "入力された文字の$1%が削除されました",
+    "description": "Message showing deletion rate",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      }
+    }
+  },
+  "analytics_below_threshold": {
+    "message": "しきい値未満",
+    "description": "Message when value is below threshold"
+  },
+  "analytics_above_threshold": {
+    "message": "しきい値超過",
+    "description": "Message when value is above threshold"
+  },
+  "analytics_normal_range": {
+    "message": "通常範囲内",
+    "description": "Message when value is in normal range"
+  },
+  "auth_login_tab": {
+    "message": "ログイン",
+    "description": "Login tab label"
+  },
+  "auth_signup_tab": {
+    "message": "新規登録",
+    "description": "Sign up tab label"
+  },
+  "auth_first_name": {
+    "message": "名",
+    "description": "First name field label"
+  },
+  "auth_last_name": {
+    "message": "姓",
+    "description": "Last name field label"
+  },
+  "auth_email": {
+    "message": "メールアドレス",
+    "description": "Email field label"
+  },
+  "auth_password": {
+    "message": "パスワード",
+    "description": "Password field label"
+  },
+  "auth_signup_button": {
+    "message": "登録",
+    "description": "Sign up button text"
+  },
+  "auth_login_button": {
+    "message": "ログイン",
+    "description": "Login button text"
+  },
+  "auth_google_signin": {
+    "message": "Googleでログイン",
+    "description": "Google sign in button text"
+  },
+  "auth_forgot_password": {
+    "message": "パスワードをお忘れですか？",
+    "description": "Forgot password link text"
+  },
+  "auth_have_account": {
+    "message": "アカウントをお持ちの方はこちらからログイン",
+    "description": "Sign in link text"
+  },
+  "auth_no_account": {
+    "message": "アカウントをお持ちでない方は新規登録",
+    "description": "Sign up link text"
+  },
+  "auth_terms_agree": {
+    "message": "続行することで、改訂履歴の利用規約とプライバシーポリシーに同意し、定期的な更新メールの受信に同意したものとみなされます。",
+    "description": "Terms agreement text"
+  },
+  "auth_terms_link": {
+    "message": "利用規約",
+    "description": "Link text for terms of service"
+  },
+  "auth_and": {
+    "message": "および",
+    "description": "Conjunction between terms and privacy policy"
+  },
+  "auth_privacy_link": {
+    "message": "プライバシーポリシー",
+    "description": "Link text for privacy policy"
+  },
+  "auth_required_field": {
+    "message": "この項目は必須です。",
+    "description": "Required field error message"
+  },
+  "auth_valid_email": {
+    "message": "有効なメールアドレスを入力してください。",
+    "description": "Valid email error message"
+  },
+  "auth_fill_all": {
+    "message": "すべての必須フィールドに入力してください",
+    "description": "Error message when not all fields are filled"
+  },
+  "tooltip_pattern_rapid_text": {
+    "message": "大量のテキストが複数回急速に追加されました",
+    "description": "Tooltip explaining rapid text addition pattern"
+  },
+  "tooltip_pattern_large_chunks": {
+    "message": "大量のテキストが大きなブロックとして追加されました",
+    "description": "Tooltip explaining large chunks pattern"
+  },
+  "tooltip_pattern_uneven": {
+    "message": "セッション間でコンテンツの分布が不均一です",
+    "description": "Tooltip explaining uneven distribution pattern"
+  },
+  "tooltip_pattern_low_deletion": {
+    "message": "削除率が平均を大幅に下回っています",
+    "description": "Tooltip explaining low deletion rate pattern"
+  },
+  "flag_result_status": {
+    "message": "ステータス",
+    "description": "Label for result status"
+  },
+  "flag_result_details": {
+    "message": "詳細",
+    "description": "Label for result details"
+  },
+  "flag_result_disabled": {
+    "message": "無効",
+    "description": "Status for disabled features"
+  },
+  "flag_result_voice_disabled": {
+    "message": "音声テキスト変換検出は無効化されています",
+    "description": "Message explaining voice detection is disabled"
+  },
+  "flag_result_voice_excluded": {
+    "message": "日本語では音声テキスト変換検出は除外されています",
+    "description": "Short message for voice detection exclusion"
+  },
+  "reset_password_title": {
+    "message": "パスワードのリセット",
+    "description": "Title for reset password page"
+  },
+  "reset_password_instruction": {
+    "message": "メールアドレスを入力してリセットコードを受け取ってください。",
+    "description": "Instruction text for reset password page"
+  },
+  "reset_password_button": {
+    "message": "リセットコードを送信",
+    "description": "Button text to send reset code"
+  },
+  "confirm_email_title": {
+    "message": "メールアドレスの確認",
+    "description": "Title for email confirmation page"
+  },
+  "enter_valid_email": {
+    "message": "有効なメールアドレスを入力してください。",
+    "description": "Error message for invalid email"
+  },
+  "reset_code_sent": {
+    "message": "リセットコードをメールで送信しました。",
+    "description": "Success message after sending reset code"
+  },
+  "enter_reset_code": {
+    "message": "メールで送信されたリセットコードを入力してください",
+    "description": "Instruction for entering reset code"
+  },
+  "reset_code_label": {
+    "message": "リセットコード",
+    "description": "Label for reset code input field"
+  },
+  "verify_code_button": {
+    "message": "確認",
+    "description": "Button text to verify reset code"
+  },
+  "password_reset_success": {
+    "message": "パスワードのリセットが完了しました",
+    "description": "Success message after password reset"
+  },
+  "new_password_label": {
+    "message": "新しいパスワード",
+    "description": "Label for new password input"
+  },
+  "confirm_password_label": {
+    "message": "パスワードの確認",
+    "description": "Label for confirm password input"
+  },
+  "save_password_button": {
+    "message": "パスワードを保存",
+    "description": "Button text to save new password"
+  },
+  "passwords_must_match": {
+    "message": "パスワードが一致しません",
+    "description": "Error message when passwords don't match"
+  },
+  "page_title_reset_password": {
+    "message": "リビジョン履歴 - パスワードのリセット",
+    "description": "Browser tab title for reset password page"
+  },
+  "page_title_confirm_email": {
+    "message": "リビジョン履歴 - メールアドレスの確認",
+    "description": "Browser tab title for confirm email page"
+  },
+  "confirm_email_check_inbox": {
+    "message": "受信トレイを確認してください",
+    "description": "Title for check inbox page"
+  },
+  "confirm_email_code_sent": {
+    "message": "$EMAIL$ に6桁の確認コードを送信しました。下記に入力してください。",
+    "description": "Message indicating code has been sent",
+    "placeholders": {
+      "EMAIL": {
+        "content": "$1",
+        "example": "user@example.com"
+      }
+    }
+  },
+  "confirm_email_code_resent": {
+    "message": "確認コードを再送信しました。受信トレイに表示されない場合は、迷惑メールフォルダをご確認ください。",
+    "description": "Message shown when code is resent"
+  },
+  "confirm_email_no_code": {
+    "message": "コードが届きませんか？",
+    "description": "Text for resend code prompt"
+  },
+  "confirm_email_resend": {
+    "message": "コードを再送信",
+    "description": "Text for resend code link"
+  },
+  "confirm_email_success": {
+    "message": "メール確認完了",
+    "description": "Title for success page"
+  },
+  "confirm_email_success_message": {
+    "message": "メールアドレスの確認が完了しました。ログインできるようになりました。",
+    "description": "Success message after email confirmation"
+  },
+  "confirm_email_verify": {
+    "message": "メールアドレスを確認",
+    "description": "Button text to verify email"
+  },
+  "flag_voice_to_text": {
+    "message": "音声テキスト変換パターン検出は無効",
+    "description": "Voice to text pattern detection label"
+  },
+  "flag_voice_to_text_explanation": {
+    "message": "入力方式の根本的な違いにより、日本語では音声テキスト変換の検出は行いません",
+    "description": "Explanation for voice to text detection being disabled"
+  },
+  "analytics_voice_detected": {
+    "message": "インクリメンタルなテキスト追加が複数回検出されました",
+    "description": "Message when voice patterns are detected"
+  },
+  "analytics_no_voice_patterns": {
+    "message": "音声テキスト変換パターンは検出されませんでした",
+    "description": "Message when no voice patterns are found"
+  },
+  "analytics_calculating": {
+    "message": "作業パターンを計算中...",
+    "description": "Message while calculating analytics"
+  },
+  "flag_editing_pattern_title": {
+    "message": "編集パターン:",
+    "description": "Title for editing pattern flag"
+  },
+  "flag_text_addition_title": {
+    "message": "テキスト追加:",
+    "description": "Title for text addition pattern flag"
+  },
+  "flag_content_addition_title": {
+    "message": "コンテンツ追加:",
+    "description": "Title for content addition pattern flag"
+  },
+  "flag_session_distribution_title": {
+    "message": "セッション分布:",
+    "description": "Title for session distribution pattern flag"
+  },
+  "flag_voice_to_text_title": {
+    "message": "音声テキスト変換:",
+    "description": "Title for voice-to-text pattern flag"
+  },
+  "flag_voice_pattern_title": {
+    "message": "音声入力パターン：",
+    "description": "Title for voice input pattern flag"
+  },
+  "flag_deletion_pattern_title": {
+    "message": "削除パターン：",
+    "description": "Title for deletion pattern flag"
+  },
+  "flag_editing_pattern_explanation": {
+    "message": "テキスト編集の頻度とパターンの分析",
+    "description": "Explanation for editing pattern flag"
+  },
+  "flag_text_addition_explanation": {
+    "message": "テキスト追加の速度とパターンの分析",
+    "description": "Explanation for text addition pattern flag"
+  },
+  "flag_content_addition_explanation": {
+    "message": "コンテンツ追加の量と分布の分析",
+    "description": "Explanation for content addition pattern flag"
+  },
+  "flag_session_distribution_explanation": {
+    "message": "セッション間での作業分布の分析",
+    "description": "Explanation for session distribution pattern flag"
+  },
+  "flag_editing_pattern": {
+    "message": "🧠 編集パターン: $REASON$",
+    "description": "Flag for unusual editing pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "低い削除率"
+      }
+    }
+  },
+  "flag_text_addition": {
+    "message": "🧠 テキスト追加パターン: $REASON$",
+    "description": "Flag for unusual text addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "急速な大量追加"
+      }
+    }
+  },
+  "flag_content_addition": {
+    "message": "🧠 コンテンツ追加パターン: $REASON$",
+    "description": "Flag for unusual content addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "大きなチャンク"
+      }
+    }
+  },
+  "flag_session_distribution": {
+    "message": "🧠 作業セッション分布: $REASON$",
+    "description": "Flag for unusual session distribution",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "不均等な分布"
+      }
+    }
+  },
+  "auth_signup_banner": {
+    "message": "初めてアカウントを作成しますか？Revision Historyをすでに使用していても、続行するにはアカウントを作成する必要があります。",
+    "description": "Banner message explaining that existing users need to create an account"
+  },
+  "auth_signup_tooltip": {
+    "message": "登録プロセスを更新しました。以前Googleを使用していた場合は、メールアドレスとパスワードで新しいアカウントを作成する必要があります。長年のご利用ありがとうございます！",
+    "description": "Tooltip explaining the sign-up process for existing users"
+  },
+  "upgrade_modal_title": {
+    "message": "Plusにアップグレード",
+    "description": "Title of the upgrade modal"
+  },
+  "upgrade_document_count": {
+    "message": "今月は無料ドキュメント$LIMIT$件中$COUNT$件を分析しました。",
+    "description": "Shows how many documents have been analyzed out of the monthly limit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "23"
+      },
+      "LIMIT": {
+        "content": "$2",
+        "example": "150"
+      }
+    }
+  },
+  "upgrade_message": {
+    "message": "これほど多くの教育者が私たちの製品を使用するとは<em>決して</em>想像していませんでした。控えめに言っても、私たちは感謝しています。現在15万人以上の教育者がRevision Historyを使用しており、サブスクリプションによって無制限のドキュメント分析が可能になり、継続的なサポートと改善に資金が提供されます。",
+    "description": "Message explaining the need for subscriptions"
+  },
+  "upgrade_value_proposition": {
+    "message": "無制限の分析を解除して、生徒の文章作成に関する洞察を得ましょう。",
+    "description": "Value proposition for upgrading"
+  },
+  "upgrade_plan_monthly": {
+    "message": "月額",
+    "description": "Monthly plan label"
+  },
+  "upgrade_plan_annual": {
+    "message": "年額",
+    "description": "Annual plan label"
+  },
+  "upgrade_price_monthly": {
+    "message": "USD 4.49",
+    "description": "Monthly subscription price"
+  },
+  "upgrade_price_annual": {
+    "message": "USD 2.67",
+    "description": "Annual subscription price (per month)"
+  },
+  "upgrade_per_month": {
+    "message": "/月",
+    "description": "Text indicating price is per month"
+  },
+  "upgrade_billed_annually": {
+    "message": "年間USD 32請求",
+    "description": "Text indicating annual billing amount"
+  },
+  "upgrade_save_percent": {
+    "message": "40%節約",
+    "description": "Text showing savings percentage"
+  },
+  "upgrade_best_value": {
+    "message": "ベストバリュー",
+    "description": "Label for the best value option"
+  },
+  "upgrade_feature_unlimited": {
+    "message": "無制限のドキュメント分析",
+    "description": "Feature: unlimited document analysis"
+  },
+  "upgrade_feature_cancel": {
+    "message": "いつでもキャンセル可能",
+    "description": "Feature: ability to cancel anytime"
+  },
+  "upgrade_feature_priority": {
+    "message": "優先サポート",
+    "description": "Feature: priority support"
+  },
+  "upgrade_choose_monthly": {
+    "message": "月額プランを選択",
+    "description": "Button text to choose monthly plan"
+  },
+  "upgrade_choose_annual": {
+    "message": "年額プランを選択",
+    "description": "Button text to choose annual plan"
+  },
+  "upgrade_schools_title": {
+    "message": "学校・教育区",
+    "description": "Title for schools and districts section"
+  },
+  "upgrade_schools_description": {
+    "message": "学校や教育区向けの一括ライセンスをお探しですか？",
+    "description": "Description for schools and districts section"
+  },
+  "upgrade_schools_feature_dpa": {
+    "message": "カスタムデータプライバシー契約（DPA）",
+    "description": "Feature: custom data privacy agreement"
+  },
+  "upgrade_schools_feature_support": {
+    "message": "プレミアムサポート",
+    "description": "Feature: white glove support"
+  },
+  "upgrade_schools_feature_discounts": {
+    "message": "ボリュームディスカウント",
+    "description": "Feature: volume discounts"
+  },
+  "upgrade_contact_quote": {
+    "message": "お見積りについてお問い合わせください",
+    "description": "Button text to contact for a quote"
+  },
+  "upgrade_button": {
+    "message": "アップグレード",
+    "description": "Button text for upgrading to Plus plan"
+  },
+  "tooltip_doc_counter": {
+    "message": "無料ユーザーは月に最大150の固有ドキュメントを分析できます。このカウンターは毎月1日にリセットされます。",
+    "description": "Tooltip explaining the document counter limit"
+  }
+} 

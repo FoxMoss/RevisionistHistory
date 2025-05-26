@@ -1,0 +1,700 @@
+{
+  "extName": {
+    "message": "Historial de Revisiones",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Diseñado para profesores - muestra el historial de ediciones de los estudiantes en Google Docs",
+    "description": "The description of the extension"
+  },
+  "stats_deletions": {
+    "message": "Eliminaciones",
+    "description": "Label for number of deletions"
+  },
+  "stats_copyPaste": {
+    "message": "Copiar/pegar grandes",
+    "description": "Label for number of large copy/paste instances"
+  },
+  "stats_writingSessions": {
+    "message": "Sesiones de escritura",
+    "description": "Label for number of writing sessions"
+  },
+  "stats_activeTime": {
+    "message": "Tiempo activo de escritura",
+    "description": "Label for total active writing time"
+  },
+  "button_details": {
+    "message": "Detalles",
+    "description": "Text for details button"
+  },
+  "button_hide": {
+    "message": "Ocultar",
+    "description": "Text for hide button"
+  },
+  "section_copyPaste": {
+    "message": "Segmentos copiados/pegados",
+    "description": "Title for copy/paste section"
+  },
+  "section_writingSessions": {
+    "message": "Sesiones de escritura",
+    "description": "Title for writing sessions section"
+  },
+  "tooltip_deletions": {
+    "message": "Eliminaciones cuenta el número de veces que se eliminó texto del documento (por ejemplo, al presionar retroceso o al resaltar y eliminar una palabra u oración).",
+    "description": "Tooltip explanation for deletions"
+  },
+  "tooltip_copyPaste": {
+    "message": "El número de segmentos grandes copiados/pegados. Nota: solo cuenta copiar/pegar de 20 o más palabras y 150 o más caracteres.",
+    "description": "Tooltip explanation for copy/paste"
+  },
+  "tooltip_writingSessions": {
+    "message": "Las sesiones de escritura cuentan el número de sesiones diferentes donde se realizaron cambios en un documento. Cualquier pausa de más de 5 minutos cuenta como una nueva sesión.",
+    "description": "Tooltip explanation for writing sessions"
+  },
+  "tooltip_activeTime": {
+    "message": "El tiempo activo de escritura mide el tiempo total dedicado a escribir o editar activamente. No se cuentan las pausas de más de 5 minutos.",
+    "description": "Tooltip explanation for active time"
+  },
+  "status_loading": {
+    "message": "Cargando historial de revisiones...",
+    "description": "Loading status message"
+  },
+  "error_notLoggedIn": {
+    "message": "Por favor, inicia sesión en Google Docs para ver el historial de revisiones.",
+    "description": "Error message when not logged in"
+  },
+  "error_noAccess": {
+    "message": "Solicita acceso de edición al documento para ver el historial de revisiones.",
+    "description": "Error message when no edit access"
+  },
+  "login_prompt": {
+    "message": "Activa la reproducción gratuita de documentos ahora",
+    "description": "Login prompt text"
+  },
+  "analytics_patterns_normal": {
+    "message": "✓ No hay patrones de escritura inusuales",
+    "description": "Message shown when no unusual patterns are detected"
+  },
+  "analytics_patterns_unusual": {
+    "message": "🧠 $COUNT$ $PATTERN$ de escritura inusuales",
+    "description": "Message shown when unusual patterns are detected",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      },
+      "PATTERN": {
+        "content": "$2",
+        "example": "patrones"
+      }
+    }
+  },
+  "analytics_too_short": {
+    "message": "Documento demasiado corto para el análisis",
+    "description": "Message shown when document is too short for analysis"
+  },
+  "tooltip_too_short": {
+    "message": "El análisis de escritura requiere al menos 750 caracteres de texto",
+    "description": "Tooltip explaining minimum text requirement"
+  },
+  "tooltip_patterns": {
+    "message": "Todos los patrones de escritura parecen típicos",
+    "description": "Tooltip for normal writing patterns"
+  },
+  "flag_editing_pattern": {
+    "message": "🧠 Patrón de edición: $REASON$",
+    "description": "Flag for unusual editing pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Tasa baja de eliminación"
+      }
+    }
+  },
+  "flag_text_addition": {
+    "message": "🧠 Patrón de adición de texto: $REASON$",
+    "description": "Flag for unusual text addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Adiciones grandes rápidas"
+      }
+    }
+  },
+  "flag_content_addition": {
+    "message": "🧠 Patrón de adición de contenido: $REASON$",
+    "description": "Flag for unusual content addition pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Bloques grandes"
+      }
+    }
+  },
+  "flag_session_distribution": {
+    "message": "🧠 Distribución de sesiones de escritura: $REASON$",
+    "description": "Flag for unusual session distribution",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Distribución desigual"
+      }
+    }
+  },
+  "flag_voice_to_text": {
+    "message": "Patrón de voz a texto: $REASON$",
+    "description": "Flag for voice-to-text pattern",
+    "placeholders": {
+      "REASON": {
+        "content": "$1",
+        "example": "Adiciones incrementales"
+      }
+    }
+  },
+  "writing_session_start": {
+    "message": "Inicio",
+    "description": "Label for writing session start time"
+  },
+  "writing_session_duration": {
+    "message": "Duración",
+    "description": "Label for writing session duration"
+  },
+  "button_show_all_sessions": {
+    "message": "Mostrar todas las $1 sesiones de escritura...",
+    "description": "Button text to show all writing sessions",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "button_collapse_sessions": {
+    "message": "Contraer sesiones de escritura...",
+    "description": "Button text to collapse writing sessions list"
+  },
+  "feedback_prompt": {
+    "message": "Enviar preguntas, comentarios o sugerencias",
+    "description": "Text for feedback link"
+  },
+  "section_replay": {
+    "message": "Reproducción",
+    "description": "Title for replay section"
+  },
+  "button_show_replay": {
+    "message": "Mostrar reproducción del proceso de redacción",
+    "description": "Button text to show replay"
+  },
+  "section_plus_analysis": {
+    "message": "Análisis Plus",
+    "description": "Title for plus analysis section"
+  },
+  "analytics_warning_context": {
+    "message": "Nota: Las indicaciones sugieren revisar la reproducción del proceso de redacción. No son indicadores definitivos de ningún comportamiento específico.",
+    "description": "Context message shown when warnings are present"
+  },
+  "analytics_flag_details": {
+    "message": "Detalles de las indicaciones:",
+    "description": "Title for flag details section"
+  },
+  "analytics_this_doc": {
+    "message": "Este documento",
+    "description": "Label for current document metrics"
+  },
+  "analytics_normal_range": {
+    "message": "Rango normal",
+    "description": "Message when value is in normal range"
+  },
+  "analytics_above_threshold": {
+    "message": "Por encima del umbral",
+    "description": "Message when value is above threshold"
+  },
+  "analytics_below_threshold": {
+    "message": "Por debajo del umbral",
+    "description": "Message when value is below threshold"
+  },
+  "analytics_over_60": {
+    "message": "Más del 60% de los caracteres escritos fueron eliminados",
+    "description": "Message when deletion rate is over 60%"
+  },
+  "analytics_deletion_rate": {
+    "message": "$1% de los caracteres escritos fueron eliminados",
+    "description": "Message showing deletion rate",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      }
+    }
+  },
+  "analytics_rapid_additions_detected": {
+    "message": "Se detectaron múltiples instancias de adiciones rápidas de texto grande",
+    "description": "Message when rapid text additions are detected"
+  },
+  "analytics_normal_typing_speed": {
+    "message": "Texto añadido a velocidad de escritura humana típica",
+    "description": "Message when text is added at normal speed"
+  },
+  "analytics_content_chunks": {
+    "message": "$1% del contenido total provino de bloques grandes ($2)",
+    "description": "Message showing content from large chunks",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      },
+      "2": {
+        "content": "$2",
+        "example": "Rango normal"
+      }
+    }
+  },
+  "analytics_session_distribution": {
+    "message": "$1% del contenido de la sesión más activa ($2)",
+    "description": "Message showing content distribution across sessions",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "45.2"
+      },
+      "2": {
+        "content": "$2",
+        "example": "Rango normal"
+      }
+    }
+  },
+  "analytics_voice_detected": {
+    "message": "Se detectaron múltiples instancias de adiciones incrementales de texto",
+    "description": "Message when voice-to-text patterns are detected"
+  },
+  "analytics_no_voice_patterns": {
+    "message": "No se detectaron patrones de voz a texto",
+    "description": "Message when no voice-to-text patterns are found"
+  },
+  "analytics_calculating": {
+    "message": "Calculando patrones de escritura...",
+    "description": "Message shown while analytics are being calculated"
+  },
+  "rating_prompt": {
+    "message": "¿Te gusta Historial de Revisiones? ¡Déjanos una reseña!",
+    "description": "Prompt asking users to rate the extension"
+  },
+  "copyPaste_none_found": {
+    "message": "No se encontraron instancias de copiar/pegar grandes",
+    "description": "Message shown when no large copy/paste instances are found"
+  },
+  "button_show_all_pastes": {
+    "message": "Mostrar todas las $1 instancias de copiar/pegar...",
+    "description": "Button text to show all copy/paste instances",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "button_collapse_pastes": {
+    "message": "Contraer instancias de copiar/pegar",
+    "description": "Button text to collapse copy/paste list"
+  },
+  "flag_reason_low_deletion": {
+    "message": "Tasa baja de eliminación",
+    "description": "Reason for low deletion rate flag"
+  },
+  "flag_reason_rapid_additions": {
+    "message": "Adiciones rápidas",
+    "description": "Reason for rapid additions flag"
+  },
+  "flag_reason_large_blocks": {
+    "message": "Bloques grandes",
+    "description": "Reason for large blocks flag"
+  },
+  "flag_reason_uneven_distribution": {
+    "message": "Distribución desigual",
+    "description": "Reason for uneven distribution flag"
+  },
+  "flag_reason_incremental": {
+    "message": "Adiciones incrementales",
+    "description": "Reason for incremental additions flag"
+  },
+  "flag_editing_pattern_explanation": {
+    "message": "Análisis de la frecuencia y patrones de edición de texto",
+    "description": "Explanation for editing pattern flag"
+  },
+  "flag_text_addition_explanation": {
+    "message": "Análisis de la velocidad y patrones de adición de texto",
+    "description": "Explanation for text addition pattern flag"
+  },
+  "flag_content_addition_explanation": {
+    "message": "Análisis del volumen y distribución del contenido añadido",
+    "description": "Explanation for content addition pattern flag"
+  },
+  "flag_session_distribution_explanation": {
+    "message": "Análisis de la distribución del trabajo entre sesiones",
+    "description": "Explanation for session distribution pattern flag"
+  },
+  "flag_voice_to_text_explanation": {
+    "message": "Los patrones de voz a texto indican el uso potencial de dictado o herramientas similares",
+    "description": "Explanation for voice to text flag"
+  },
+  "tooltip_pattern_rapid_text": {
+    "message": "Múltiples instancias de segmentos grandes de texto añadidos rápidamente",
+    "description": "Tooltip explaining rapid text addition pattern"
+  },
+  "tooltip_pattern_large_chunks": {
+    "message": "Porción significativa del texto añadida en bloques grandes",
+    "description": "Tooltip explaining large chunks pattern"
+  },
+  "tooltip_pattern_voice": {
+    "message": "Patrones consistentes con el uso de voz a texto o dictado",
+    "description": "Tooltip explaining voice to text pattern"
+  },
+  "tooltip_pattern_uneven": {
+    "message": "Distribución desigual del contenido entre sesiones",
+    "description": "Tooltip explaining uneven distribution pattern"
+  },
+  "tooltip_pattern_low_deletion": {
+    "message": "Tasa de eliminación significativamente por debajo del promedio",
+    "description": "Tooltip explaining low deletion rate pattern"
+  },
+  "auth_login_tab": {
+    "message": "Iniciar sesión",
+    "description": "Login tab label"
+  },
+  "auth_signup_tab": {
+    "message": "Registrarse",
+    "description": "Sign up tab label"
+  },
+  "auth_first_name": {
+    "message": "Nombre",
+    "description": "First name field label"
+  },
+  "auth_last_name": {
+    "message": "Apellidos",
+    "description": "Last name field label"
+  },
+  "auth_email": {
+    "message": "Correo electrónico",
+    "description": "Email field label"
+  },
+  "auth_password": {
+    "message": "Contraseña",
+    "description": "Password field label"
+  },
+  "auth_signup_button": {
+    "message": "Registrarse",
+    "description": "Sign up button text"
+  },
+  "auth_login_button": {
+    "message": "Iniciar sesión",
+    "description": "Login button text"
+  },
+  "auth_google_signin": {
+    "message": "Iniciar sesión con Google",
+    "description": "Google sign in button text"
+  },
+  "auth_forgot_password": {
+    "message": "¿Olvidaste tu contraseña?",
+    "description": "Forgot password link text"
+  },
+  "auth_have_account": {
+    "message": "¿Ya tienes una cuenta? Inicia sesión aquí.",
+    "description": "Sign in link text"
+  },
+  "auth_no_account": {
+    "message": "¿No tienes una cuenta? Regístrate.",
+    "description": "Sign up link text"
+  },
+  "auth_terms_agree": {
+    "message": "Al registrarte, aceptas nuestros",
+    "description": "Text indicating agreement to terms"
+  },
+  "auth_terms_link": {
+    "message": "Términos de Servicio",
+    "description": "Link text for terms of service"
+  },
+  "auth_and": {
+    "message": "y",
+    "description": "Conjunction between terms and privacy policy"
+  },
+  "auth_privacy_link": {
+    "message": "Política de Privacidad",
+    "description": "Link text for privacy policy"
+  },
+  "auth_required_field": {
+    "message": "Este campo es obligatorio.",
+    "description": "Required field error message"
+  },
+  "auth_valid_email": {
+    "message": "Por favor, introduce una dirección de correo electrónico válida.",
+    "description": "Valid email error message"
+  },
+  "auth_fill_all": {
+    "message": "Por favor complete todos los campos requeridos",
+    "description": "Error message when not all fields are filled"
+  },
+  "reset_password_title": {
+    "message": "Restablecer contraseña",
+    "description": "Title for reset password page"
+  },
+  "reset_password_instruction": {
+    "message": "Introduce tu correo electrónico para recibir el código de restablecimiento.",
+    "description": "Instruction text for reset password page"
+  },
+  "reset_password_button": {
+    "message": "Enviar código",
+    "description": "Button text to send reset code"
+  },
+  "confirm_email_title": {
+    "message": "Confirmar correo electrónico",
+    "description": "Title for email confirmation page"
+  },
+  "enter_valid_email": {
+    "message": "Por favor, introduce una dirección de correo electrónico válida.",
+    "description": "Error message for invalid email"
+  },
+  "reset_code_sent": {
+    "message": "Se ha enviado el código de restablecimiento a tu correo electrónico.",
+    "description": "Success message after sending reset code"
+  },
+  "enter_reset_code": {
+    "message": "Introduce el código de restablecimiento enviado a tu correo electrónico",
+    "description": "Instruction for entering reset code"
+  },
+  "reset_code_label": {
+    "message": "Código de restablecimiento",
+    "description": "Label for reset code input field"
+  },
+  "verify_code_button": {
+    "message": "Verificar",
+    "description": "Button text to verify reset code"
+  },
+  "password_reset_success": {
+    "message": "Contraseña restablecida con éxito",
+    "description": "Success message after password reset"
+  },
+  "new_password_label": {
+    "message": "Nueva contraseña",
+    "description": "Label for new password input"
+  },
+  "confirm_password_label": {
+    "message": "Confirmar contraseña",
+    "description": "Label for confirm password input"
+  },
+  "save_password_button": {
+    "message": "Guardar contraseña",
+    "description": "Button text to save new password"
+  },
+  "passwords_must_match": {
+    "message": "Las contraseñas deben coincidir",
+    "description": "Error message when passwords don't match"
+  },
+  "page_title_reset_password": {
+    "message": "Historial de revisiones - Restablecer contraseña",
+    "description": "Browser tab title for reset password page"
+  },
+  "page_title_confirm_email": {
+    "message": "Historial de revisiones - Confirmar correo electrónico",
+    "description": "Browser tab title for confirm email page"
+  },
+  "confirm_email_check_inbox": {
+    "message": "Revisa tu bandeja de entrada",
+    "description": "Title for check inbox page"
+  },
+  "confirm_email_code_sent": {
+    "message": "Hemos enviado un código de verificación de 6 dígitos a $EMAIL$. Por favor, introdúcelo a continuación.",
+    "description": "Message indicating code has been sent",
+    "placeholders": {
+      "EMAIL": {
+        "content": "$1",
+        "example": "user@example.com"
+      }
+    }
+  },
+  "confirm_email_code_resent": {
+    "message": "Se ha reenviado el código de verificación. Si no lo encuentras en tu bandeja de entrada, revisa la carpeta de spam.",
+    "description": "Message shown when code is resent"
+  },
+  "confirm_email_no_code": {
+    "message": "¿No has recibido el código?",
+    "description": "Text for resend code prompt"
+  },
+  "confirm_email_resend": {
+    "message": "Reenviar código",
+    "description": "Text for resend code link"
+  },
+  "confirm_email_success": {
+    "message": "Correo electrónico confirmado",
+    "description": "Title for success page"
+  },
+  "confirm_email_success_message": {
+    "message": "Tu correo electrónico ha sido verificado con éxito. Ahora puedes iniciar sesión.",
+    "description": "Success message after email confirmation"
+  },
+  "confirm_email_verify": {
+    "message": "Verificar correo electrónico",
+    "description": "Button text to verify email"
+  },
+  "flag_editing_pattern_title": {
+    "message": "Patrón de edición:",
+    "description": "Title for editing pattern flag"
+  },
+  "flag_text_addition_title": {
+    "message": "Adición de texto:",
+    "description": "Title for text addition pattern flag"
+  },
+  "flag_content_addition_title": {
+    "message": "Adición de contenido:",
+    "description": "Title for content addition pattern flag"
+  },
+  "flag_session_distribution_title": {
+    "message": "Distribución de sesiones:",
+    "description": "Title for session distribution pattern flag"
+  },
+  "flag_voice_to_text_title": {
+    "message": "Voz a texto:",
+    "description": "Title for voice-to-text pattern flag"
+  },
+  "tooltip_flag_editing_pattern": {
+    "message": "Mide cuánto texto se elimina en comparación con lo que se agrega. Tasas bajas de eliminación pueden indicar contenido preparado previamente, mientras que tasas altas pueden mostrar revisiones o ediciones extensas.",
+    "description": "Tooltip for editing pattern flag"
+  },
+  "tooltip_flag_text_addition": {
+    "message": "Identifica cuando grandes cantidades de texto aparecen rápidamente. Esto ayuda a distinguir entre contenido escrito manualmente y texto copiado de otra fuente o agregado de una sola vez.",
+    "description": "Tooltip for text addition flag"
+  },
+  "tooltip_flag_content_addition": {
+    "message": "Muestra cuando partes significativas del documento se agregaron en grandes bloques en lugar de gradualmente. Esto ayuda a identificar si el contenido se desarrolló dentro del documento o se preparó en otro lugar.",
+    "description": "Tooltip for content addition flag"
+  },
+  "tooltip_flag_session_distribution": {
+    "message": "Examina cómo se distribuye la escritura en diferentes sesiones de trabajo. Una distribución desigual puede indicar que partes fueron desarrolladas fuera del proceso principal de redacción.",
+    "description": "Tooltip for session distribution flag"
+  },
+  "tooltip_flag_voice_to_text": {
+    "message": "Detecta patrones típicos de herramientas de dictado por voz, como texto que aparece en pequeños fragmentos con pocas eliminaciones y patrones de error característicos.",
+    "description": "Tooltip for voice-to-text flag"
+  },
+  "tooltip_unusual_patterns_simple": {
+    "message": "Consulte Detalles para más información sobre los patrones de escritura",
+    "description": "Simplified tooltip for unusual patterns, directing to Details section"
+  },
+  "auth_signup_banner": {
+    "message": "¿Primera vez creando una cuenta? Incluso si ya ha utilizado Revision History antes, necesitará crear una cuenta para continuar.",
+    "description": "Banner message explaining that existing users need to create an account"
+  },
+  "auth_signup_tooltip": {
+    "message": "Hemos actualizado nuestro proceso de registro. Si anteriormente usaba Google, deberá crear una nueva cuenta con su correo electrónico y contraseña. ¡Gracias por ser un usuario fiel!",
+    "description": "Tooltip explaining the sign-up process for existing users"
+  },
+  "upgrade_modal_title": {
+    "message": "Actualizar a Plus",
+    "description": "Title of the upgrade modal"
+  },
+  "upgrade_document_count": {
+    "message": "Has analizado $COUNT$ de $LIMIT$ documentos gratuitos este mes.",
+    "description": "Shows how many documents have been analyzed out of the monthly limit",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "23"
+      },
+      "LIMIT": {
+        "content": "$2",
+        "example": "150"
+      }
+    }
+  },
+  "upgrade_message": {
+    "message": "<em>Nunca</em> imaginamos que tantos educadores usarían nuestro producto. Estamos agradecidos, por decir lo menos. Con más de 150 mil educadores usando ahora Revision History, la suscripción desbloquea análisis ilimitado de documentos y financia el soporte y mejoras continuas.",
+    "description": "Message explaining the need for subscriptions"
+  },
+  "upgrade_value_proposition": {
+    "message": "Desbloquea análisis ilimitado y obtén información sobre la escritura de tus estudiantes.",
+    "description": "Value proposition for upgrading"
+  },
+  "upgrade_plan_monthly": {
+    "message": "Mensual",
+    "description": "Monthly plan label"
+  },
+  "upgrade_plan_annual": {
+    "message": "Anual",
+    "description": "Annual plan label"
+  },
+  "upgrade_price_monthly": {
+    "message": "USD 4.49",
+    "description": "Monthly subscription price"
+  },
+  "upgrade_price_annual": {
+    "message": "USD 2.67",
+    "description": "Annual subscription price (per month)"
+  },
+  "upgrade_per_month": {
+    "message": "/mes",
+    "description": "Text indicating price is per month"
+  },
+  "upgrade_billed_annually": {
+    "message": "USD 32 facturados anualmente",
+    "description": "Text indicating annual billing amount"
+  },
+  "upgrade_save_percent": {
+    "message": "Ahorra 40%",
+    "description": "Text showing savings percentage"
+  },
+  "upgrade_best_value": {
+    "message": "Mejor Valor",
+    "description": "Label for the best value option"
+  },
+  "upgrade_feature_unlimited": {
+    "message": "Análisis ilimitado de documentos",
+    "description": "Feature: unlimited document analysis"
+  },
+  "upgrade_feature_cancel": {
+    "message": "Cancela en cualquier momento",
+    "description": "Feature: ability to cancel anytime"
+  },
+  "upgrade_feature_priority": {
+    "message": "Soporte prioritario",
+    "description": "Feature: priority support"
+  },
+  "upgrade_choose_monthly": {
+    "message": "Elegir Mensual",
+    "description": "Button text to choose monthly plan"
+  },
+  "upgrade_choose_annual": {
+    "message": "Elegir Anual",
+    "description": "Button text to choose annual plan"
+  },
+  "upgrade_schools_title": {
+    "message": "Escuelas y Distritos",
+    "description": "Title for schools and districts section"
+  },
+  "upgrade_schools_description": {
+    "message": "¿Buscas una licencia para tu escuela o distrito?",
+    "description": "Description for schools and districts section"
+  },
+  "upgrade_schools_feature_dpa": {
+    "message": "Acuerdo de Privacidad de Datos Personalizado (DPA)",
+    "description": "Feature: custom data privacy agreement"
+  },
+  "upgrade_schools_feature_support": {
+    "message": "Soporte Premium",
+    "description": "Feature: white glove support"
+  },
+  "upgrade_schools_feature_discounts": {
+    "message": "Descuentos por Volumen",
+    "description": "Feature: volume discounts"
+  },
+  "upgrade_contact_quote": {
+    "message": "Contáctanos para una Cotización",
+    "description": "Button text to contact for a quote"
+  },
+  "upgrade_button": {
+    "message": "Actualizar",
+    "description": "Button text for upgrading to Plus plan"
+  },
+  "tooltip_doc_counter": {
+    "message": "Los usuarios gratuitos pueden analizar hasta 150 documentos únicos por mes. Este contador se reinicia el día 1 de cada mes.",
+    "description": "Tooltip explaining the document counter limit"
+  }
+} 
