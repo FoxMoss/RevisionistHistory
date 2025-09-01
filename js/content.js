@@ -3831,7 +3831,7 @@
           i = t.n(a)()(o());
         i.push([
           n.id,
-          ".revision-history-component .SummaryStats {\n  color: #444746;\n  background-color: #f1e5d4;\n  padding: 3px 10px;\n  border-radius: 5px;\n  align-items: center;\n  margin-bottom: 10px;\n  text-align: center;\n  min-height: 36px;\n  display: flex;\n  position: relative;\n}\n\n/* New layout with three sections */\n.revision-history-component .SummaryStats .stats-content {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n}\n\n.revision-history-component .SummaryStats .stats-section {\n  display: flex;\n  align-items: center;\n}\n\n.revision-history-component .SummaryStats .center-section {\n  flex-grow: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: nowrap;\n  gap: 8px;\n  padding: 0;\n  margin: 0 auto;\n  width: auto;\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 1;\n  overflow-x: auto;\n  scrollbar-width: none;\n  padding-right: 120px;\n}\n\n/* Hide scrollbar for Chrome, Safari and Opera */\n.revision-history-component .SummaryStats .center-section::-webkit-scrollbar {\n  display: none;\n}\n\n/* Hide right section elements (except close button) on narrow screens to prevent overlap */\n@media (max-width: 900px) {\n  .revision-history-component .SummaryStats .doc-counter,\n  .revision-history-component .SummaryStats .upgrade-button,\n  .revision-history-component .SummaryStats .premium-badge {\n    display: none;\n  }\n  \n  /* Give more space to the center section when right elements are hidden */\n  .revision-history-component .SummaryStats .center-section {\n    max-width: 85%;\n  }\n}\n\n/* Additional breakpoint for medium screens to prevent overlap */\n@media (max-width: 1100px) and (min-width: 901px) {\n  /* Make the right section elements more compact */\n  .revision-history-component .SummaryStats .doc-counter {\n    font-size: 0.75rem;\n    margin-right: 5px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button {\n    font-size: 0.75rem;\n    padding: 1px 6px !important;\n  }\n  \n  /* Add more space for the right section */\n  .revision-history-component .SummaryStats .right-section {\n    min-width: 120px;\n  }\n}\n\n/* Make stat items more compact on smaller screens */\n@media (max-width: 768px) {\n  .revision-history-component .SummaryStats .stat-item {\n    padding: 2px 4px;\n    font-size: 12px;\n  }\n  \n  .revision-history-component .SummaryStats .divider {\n    margin: 0 1px;\n  }\n  \n  /* Improve handling of flag indicator and upgrade button */\n  .revision-history-component .SummaryStats .flag-indicator {\n    max-width: 120px;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n  \n  .revision-history-component .SummaryStats .limit-reached-message {\n    gap: 8px;\n    font-size: 13px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button-inline {\n    font-size: 12px;\n    padding: 2px 8px;\n    white-space: nowrap;\n  }\n}\n\n/* Additional breakpoint for very narrow screens */\n@media (max-width: 600px) {\n  .revision-history-component .SummaryStats .center-section {\n    max-width: 95%;\n    justify-content: flex-start;\n    padding-left: 25px; /* Add space for the logo */\n  }\n  \n  /* Hide dividers to save space */\n  .revision-history-component .SummaryStats .divider {\n    display: none;\n  }\n  \n  /* Stack items if needed */\n  .revision-history-component .SummaryStats .limit-reached-message {\n    text-align: center;\n  }\n}\n\n.revision-history-component .SummaryStats .right-section {\n  gap: 10px;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  margin-left: auto;\n  position: relative;\n  z-index: 2;\n  min-width: 100px;\n  justify-content: flex-end;\n}\n\n.revision-history-component .SummaryStats .logo-section {\n  margin-right: 5px;\n  position: relative;\n  z-index: 2;\n}\n\n.revision-history-component .SummaryStats .quill-logo {\n  height: 22px;\n}\n\n.revision-history-component .SummaryStats .stat-item {\n  cursor: help;\n  transition: background-color 0.2s;\n  padding: 2px 8px;\n  border-radius: 3px;\n  display: inline-flex;\n  align-items: center;\n  white-space: nowrap;\n  font-size: 14px;\n}\n\n.revision-history-component .SummaryStats .stat-item:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n\n.revision-history-component .SummaryStats .divider {\n  margin: 0 2px;\n  color: #666;\n  opacity: 0.6;\n}\n\n.revision-history-component .SummaryStats .details-button {\n  margin-left: 5px;\n  margin-right: 5px;\n  margin-bottom: 0;\n  padding: 2px 10px !important;\n  background-color: #6C7D7D !important;\n  border-color: #6C7D7D !important;\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.revision-history-component .SummaryStats .login-link {\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n  display: inline-block;\n}\n\n.revision-history-component .SummaryStats .login-container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n}\n\n.revision-history-component .SummaryStats .quill-logo-inline {\n  height: 20px;\n  margin-right: 8px;\n}\n\n.revision-history-component .SummaryStats .auth-button {\n  margin-left: 10px;\n  margin-bottom: 1px;\n  padding-bottom: 2px !important;\n  padding-top: 2px !important;\n  background-color: #6C7D7D !important;\n  border-color: #6C7D7D !important;\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n}\n\n.revision-history-component .SummaryStats .hide-button {\n  color: #666;\n  padding: 2px 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n\n.revision-history-component .SummaryStats .hide-button:hover {\n  color: #333;\n}\n\n.revision-history-component .SummaryStats .doc-counter {\n  font-size: 0.85rem;\n  font-weight: 500;\n  color: #555;\n  cursor: help;\n}\n\n.revision-history-component .SummaryStats .upgrade-button {\n  background-color: #2e86de !important;\n  border-color: #2e86de !important;\n  font-size: 0.85rem;\n  font-weight: 500 !important;\n  padding: 2px 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  line-height: 1.5;\n}\n\n.revision-history-component .SummaryStats .premium-badge {\n  background-color: #32b679;\n  color: white;\n  font-size: 0.85rem;\n  font-weight: 500;\n  padding: 2px 8px;\n  border-radius: 4px;\n}\n\n.revision-history-component .SummaryStats .question-circle {\n  font-size: 15px;\n  color: #6f6f6f;\n  cursor: help;\n}\n\n.revision-history-component .question-circle {\n  margin-left: 4px;\n}\n\n.revision-history-component .SummaryStats .flag-indicator {\n  font-weight: 500;\n  /* Ensure text doesn't get cut off */\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px; /* Limit width to prevent overlap */\n}\n\n/* Additional media query for very narrow screens */\n@media (max-width: 500px) {\n  .revision-history-component .SummaryStats .flag-indicator {\n    max-width: 120px; /* Further limit width on very small screens */\n  }\n  \n  /* Hide the patterns text on very small screens and show a shorter version */\n  .revision-history-component .SummaryStats .patterns-text {\n    display: inline-block;\n    max-width: 100px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n  \n  .revision-history-component .SummaryStats .limit-reached-message {\n    gap: 5px;\n    font-size: 12px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button-inline {\n    font-size: 11px;\n    padding: 1px 6px;\n    min-width: 0;\n  }\n}\n\n.revision-history-component .SummaryStats .flag-indicator.warning {\n  color: #3498DB;\n}\n\n.revision-history-component .SummaryStats .flag-indicator.clean {\n  color: #3c8717;\n}\n\n.revision-history-component .SummaryStats .flag-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 4px;\n}\n\n.revision-history-component .SummaryStats .flag-icon {\n  margin-right: 5px;\n}\n\n.revision-history-component .SummaryStats .flag-text {\n  font-weight: 500;\n}\n\n.revision-history-component .SummaryStats .limit-reached-message {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 15px;\n  width: 100%;\n  font-size: 15px;\n  color: #555;\n}\n\n.revision-history-component .SummaryStats .upgrade-button-inline {\n  background-color: #2e86de;\n  border-color: #2e86de;\n  font-size: 14px;\n  font-weight: 500;\n  padding: 4px 12px;\n  white-space: nowrap;\n}\n\n/* Add styling for the tooltip */\n.revision-history-component .tooltip-inner {\n  max-width: 250px;\n  text-align: left;\n  padding: 8px 10px;\n  font-size: 13px;\n  line-height: 1.4;\n}\n\n.revision-history-component .SummaryStats .account-button {\n  color: #32b679;\n  padding: 2px 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  margin-left: 4px;\n}\n\n.revision-history-component .SummaryStats .account-button:hover {\n  color: #28915f;\n}",
+          ".upgrade-button {display:none;} .revision-history-component .SummaryStats {\n  color: #444746;\n  background-color: #f1e5d4;\n  padding: 3px 10px;\n  border-radius: 5px;\n  align-items: center;\n  margin-bottom: 10px;\n  text-align: center;\n  min-height: 36px;\n  display: flex;\n  position: relative;\n}\n\n/* New layout with three sections */\n.revision-history-component .SummaryStats .stats-content {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n}\n\n.revision-history-component .SummaryStats .stats-section {\n  display: flex;\n  align-items: center;\n}\n\n.revision-history-component .SummaryStats .center-section {\n  flex-grow: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: nowrap;\n  gap: 8px;\n  padding: 0;\n  margin: 0 auto;\n  width: auto;\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 1;\n  overflow-x: auto;\n  scrollbar-width: none;\n  padding-right: 120px;\n}\n\n/* Hide scrollbar for Chrome, Safari and Opera */\n.revision-history-component .SummaryStats .center-section::-webkit-scrollbar {\n  display: none;\n}\n\n/* Hide right section elements (except close button) on narrow screens to prevent overlap */\n@media (max-width: 900px) {\n  .revision-history-component .SummaryStats .doc-counter,\n  .revision-history-component .SummaryStats .upgrade-button,\n  .revision-history-component .SummaryStats .premium-badge {\n    display: none;\n  }\n  \n  /* Give more space to the center section when right elements are hidden */\n  .revision-history-component .SummaryStats .center-section {\n    max-width: 85%;\n  }\n}\n\n/* Additional breakpoint for medium screens to prevent overlap */\n@media (max-width: 1100px) and (min-width: 901px) {\n  /* Make the right section elements more compact */\n  .revision-history-component .SummaryStats .doc-counter {\n    font-size: 0.75rem;\n    margin-right: 5px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button {\n    font-size: 0.75rem;\n    padding: 1px 6px !important;\n  }\n  \n  /* Add more space for the right section */\n  .revision-history-component .SummaryStats .right-section {\n    min-width: 120px;\n  }\n}\n\n/* Make stat items more compact on smaller screens */\n@media (max-width: 768px) {\n  .revision-history-component .SummaryStats .stat-item {\n    padding: 2px 4px;\n    font-size: 12px;\n  }\n  \n  .revision-history-component .SummaryStats .divider {\n    margin: 0 1px;\n  }\n  \n  /* Improve handling of flag indicator and upgrade button */\n  .revision-history-component .SummaryStats .flag-indicator {\n    max-width: 120px;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n  }\n  \n  .revision-history-component .SummaryStats .limit-reached-message {\n    gap: 8px;\n    font-size: 13px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button-inline {\n    font-size: 12px;\n    padding: 2px 8px;\n    white-space: nowrap;\n  }\n}\n\n/* Additional breakpoint for very narrow screens */\n@media (max-width: 600px) {\n  .revision-history-component .SummaryStats .center-section {\n    max-width: 95%;\n    justify-content: flex-start;\n    padding-left: 25px; /* Add space for the logo */\n  }\n  \n  /* Hide dividers to save space */\n  .revision-history-component .SummaryStats .divider {\n    display: none;\n  }\n  \n  /* Stack items if needed */\n  .revision-history-component .SummaryStats .limit-reached-message {\n    text-align: center;\n  }\n}\n\n.revision-history-component .SummaryStats .right-section {\n  gap: 10px;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  margin-left: auto;\n  position: relative;\n  z-index: 2;\n  min-width: 100px;\n  justify-content: flex-end;\n}\n\n.revision-history-component .SummaryStats .logo-section {\n  margin-right: 5px;\n  position: relative;\n  z-index: 2;\n}\n\n.revision-history-component .SummaryStats .quill-logo {\n  height: 22px;\n}\n\n.revision-history-component .SummaryStats .stat-item {\n  cursor: help;\n  transition: background-color 0.2s;\n  padding: 2px 8px;\n  border-radius: 3px;\n  display: inline-flex;\n  align-items: center;\n  white-space: nowrap;\n  font-size: 14px;\n}\n\n.revision-history-component .SummaryStats .stat-item:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n\n.revision-history-component .SummaryStats .divider {\n  margin: 0 2px;\n  color: #666;\n  opacity: 0.6;\n}\n\n.revision-history-component .SummaryStats .details-button {\n  margin-left: 5px;\n  margin-right: 5px;\n  margin-bottom: 0;\n  padding: 2px 10px !important;\n  background-color: #6C7D7D !important;\n  border-color: #6C7D7D !important;\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.revision-history-component .SummaryStats .login-link {\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n  display: inline-block;\n}\n\n.revision-history-component .SummaryStats .login-container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n}\n\n.revision-history-component .SummaryStats .quill-logo-inline {\n  height: 20px;\n  margin-right: 8px;\n}\n\n.revision-history-component .SummaryStats .auth-button {\n  margin-left: 10px;\n  margin-bottom: 1px;\n  padding-bottom: 2px !important;\n  padding-top: 2px !important;\n  background-color: #6C7D7D !important;\n  border-color: #6C7D7D !important;\n  font-size: 0.9rem;\n  font-weight: 500 !important;\n}\n\n.revision-history-component .SummaryStats .hide-button {\n  color: #666;\n  padding: 2px 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n\n.revision-history-component .SummaryStats .hide-button:hover {\n  color: #333;\n}\n\n.revision-history-component .SummaryStats .doc-counter {\n  font-size: 0.85rem;\n  font-weight: 500;\n  color: #555;\n  cursor: help;\n}\n\n.revision-history-component .SummaryStats .upgrade-button {\n  background-color: #2e86de !important;\n  border-color: #2e86de !important;\n  font-size: 0.85rem;\n  font-weight: 500 !important;\n  padding: 2px 8px !important;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  line-height: 1.5;\n}\n\n.revision-history-component .SummaryStats .premium-badge {\n  background-color: #32b679;\n  color: white;\n  font-size: 0.85rem;\n  font-weight: 500;\n  padding: 2px 8px;\n  border-radius: 4px;\n}\n\n.revision-history-component .SummaryStats .question-circle {\n  font-size: 15px;\n  color: #6f6f6f;\n  cursor: help;\n}\n\n.revision-history-component .question-circle {\n  margin-left: 4px;\n}\n\n.revision-history-component .SummaryStats .flag-indicator {\n  font-weight: 500;\n  /* Ensure text doesn't get cut off */\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px; /* Limit width to prevent overlap */\n}\n\n/* Additional media query for very narrow screens */\n@media (max-width: 500px) {\n  .revision-history-component .SummaryStats .flag-indicator {\n    max-width: 120px; /* Further limit width on very small screens */\n  }\n  \n  /* Hide the patterns text on very small screens and show a shorter version */\n  .revision-history-component .SummaryStats .patterns-text {\n    display: inline-block;\n    max-width: 100px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n  \n  .revision-history-component .SummaryStats .limit-reached-message {\n    gap: 5px;\n    font-size: 12px;\n  }\n  \n  .revision-history-component .SummaryStats .upgrade-button-inline {\n    font-size: 11px;\n    padding: 1px 6px;\n    min-width: 0;\n  }\n}\n\n.revision-history-component .SummaryStats .flag-indicator.warning {\n  color: #3498DB;\n}\n\n.revision-history-component .SummaryStats .flag-indicator.clean {\n  color: #3c8717;\n}\n\n.revision-history-component .SummaryStats .flag-item {\n  display: flex;\n  align-items: center;\n  margin-bottom: 4px;\n}\n\n.revision-history-component .SummaryStats .flag-icon {\n  margin-right: 5px;\n}\n\n.revision-history-component .SummaryStats .flag-text {\n  font-weight: 500;\n}\n\n.revision-history-component .SummaryStats .limit-reached-message {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 15px;\n  width: 100%;\n  font-size: 15px;\n  color: #555;\n}\n\n.revision-history-component .SummaryStats .upgrade-button-inline {\n  background-color: #2e86de;\n  border-color: #2e86de;\n  font-size: 14px;\n  font-weight: 500;\n  padding: 4px 12px;\n  white-space: nowrap;\n}\n\n/* Add styling for the tooltip */\n.revision-history-component .tooltip-inner {\n  max-width: 250px;\n  text-align: left;\n  padding: 8px 10px;\n  font-size: 13px;\n  line-height: 1.4;\n}\n\n.revision-history-component .SummaryStats .account-button {\n  color: #32b679;\n  padding: 2px 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n  margin-left: 4px;\n}\n\n.revision-history-component .SummaryStats .account-button:hover {\n  color: #28915f;\n}",
           "",
         ]);
         const s = i;
@@ -25920,7 +25920,7 @@
               });
             });
           },
-          showUpgradePrompt: !1,
+          showUpgradePrompt: false,
           setShowUpgradePrompt: function () {},
           setToken: function () {},
           setNotLoggedIn: function () {},
@@ -34212,186 +34212,6 @@
                                                 },
                                                 {
                                                   children: [
-                                                    !p &&
-                                                      !!F &&
-                                                      I &&
-                                                      (0, n.jsx)(n.Fragment, {
-                                                        children: f
-                                                          ? (0, n.jsx)(
-                                                              n.Fragment,
-                                                              {
-                                                                children: (0,
-                                                                n.jsx)(
-                                                                  mt,
-                                                                  Uf(
-                                                                    {
-                                                                      placement:
-                                                                        "bottom",
-                                                                      overlay:
-                                                                        (0,
-                                                                        n.jsx)(
-                                                                          m,
-                                                                          {
-                                                                            children:
-                                                                              zi(
-                                                                                "account_settings",
-                                                                              ),
-                                                                          },
-                                                                        ),
-                                                                    },
-                                                                    {
-                                                                      children:
-                                                                        (0,
-                                                                        n.jsx)(
-                                                                          x,
-                                                                          Uf(
-                                                                            {
-                                                                              variant:
-                                                                                "link",
-                                                                              size: "sm",
-                                                                              className:
-                                                                                "account-button",
-                                                                              onClick:
-                                                                                function () {
-                                                                                  chrome.runtime.sendMessage(
-                                                                                    {
-                                                                                      action:
-                                                                                        "showPopup",
-                                                                                    },
-                                                                                  );
-                                                                                },
-                                                                              "aria-label":
-                                                                                "Account",
-                                                                            },
-                                                                            {
-                                                                              children:
-                                                                                (0,
-                                                                                n.jsx)(
-                                                                                  ti,
-                                                                                  {
-                                                                                    icon: ii,
-                                                                                  },
-                                                                                ),
-                                                                            },
-                                                                          ),
-                                                                        ),
-                                                                    },
-                                                                  ),
-                                                                ),
-                                                              },
-                                                            )
-                                                          : b < g &&
-                                                            (0, n.jsxs)(
-                                                              n.Fragment,
-                                                              {
-                                                                children: [
-                                                                  (0, n.jsx)(
-                                                                    mt,
-                                                                    Uf(
-                                                                      {
-                                                                        placement:
-                                                                          "bottom",
-                                                                        overlay:
-                                                                          cn,
-                                                                      },
-                                                                      {
-                                                                        children:
-                                                                          (0,
-                                                                          n.jsxs)(
-                                                                            "span",
-                                                                            Uf(
-                                                                              {
-                                                                                className:
-                                                                                  "doc-counter",
-                                                                              },
-                                                                              {
-                                                                                children:
-                                                                                  [
-                                                                                    b,
-                                                                                    "/",
-                                                                                    g,
-                                                                                    " docs",
-                                                                                  ],
-                                                                              },
-                                                                            ),
-                                                                          ),
-                                                                      },
-                                                                    ),
-                                                                  ),
-                                                                  (0, n.jsxs)(
-                                                                    x,
-                                                                    Uf(
-                                                                      {
-                                                                        variant:
-                                                                          "primary",
-                                                                        size: "sm",
-                                                                        onClick:
-                                                                          function () {
-                                                                            return Y(
-                                                                              !0,
-                                                                            );
-                                                                          },
-                                                                        className:
-                                                                          "upgrade-button",
-                                                                      },
-                                                                      {
-                                                                        children:
-                                                                          [
-                                                                            (0,
-                                                                            n.jsx)(
-                                                                              ti,
-                                                                              {
-                                                                                icon: li,
-                                                                                className:
-                                                                                  "me-1",
-                                                                                "aria-hidden":
-                                                                                  "true",
-                                                                              },
-                                                                            ),
-                                                                            zi(
-                                                                              "upgrade_button",
-                                                                            ),
-                                                                          ],
-                                                                      },
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              },
-                                                            ),
-                                                      }),
-                                                    !!F &&
-                                                      (0, n.jsx)(
-                                                        x,
-                                                        Uf(
-                                                          {
-                                                            variant: "link",
-                                                            size: "sm",
-                                                            className:
-                                                              "hide-button",
-                                                            onClick:
-                                                              function () {
-                                                                l(!0),
-                                                                  fd.fireEvent(
-                                                                    "hide_revision_history",
-                                                                  ),
-                                                                  chrome.runtime.sendMessage(
-                                                                    {
-                                                                      action:
-                                                                        "hideRevisionHistory",
-                                                                    },
-                                                                  );
-                                                              },
-                                                            "aria-label":
-                                                              "Hide",
-                                                          },
-                                                          {
-                                                            children: (0,
-                                                            n.jsx)(ti, {
-                                                              icon: fi,
-                                                            }),
-                                                          },
-                                                        ),
-                                                      ),
                                                   ],
                                                 },
                                               ),

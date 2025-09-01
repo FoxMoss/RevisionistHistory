@@ -56,19 +56,19 @@
     "description": "Tooltip explanation for active time"
   },
   "status_loading": {
-    "message": "Loading revision history...",
+    "message": "Loading revisionist history...",
     "description": "Loading status message"
   },
   "error_notLoggedIn": {
-    "message": "Please sign in to Google Docs to see revision history.",
+    "message": "Please sign in to Google Docs to see revisionist history.",
     "description": "Error message when not logged in"
   },
   "error_noAccess": {
-    "message": "Request edit access to document to see revision history.",
+    "message": "Request edit access to document to see revisionist history.",
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Activate free document replay now",
+    "message": "Click the extension icon to log in.",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {
@@ -156,7 +156,7 @@
     }
   },
   "rating_prompt": {
-    "message": "Love Revision History? Rate us",
+    "message": "Love Revisionist History? Reconsider.",
     "description": "Prompt for users to rate the extension"
   },
   "section_replay": {
@@ -418,7 +418,7 @@
     "description": "Error message when not all fields are filled"
   },
   "auth_signup_banner": {
-    "message": "First time creating an account? Even if you've used Revision History before, you'll need to create an account to continue.",
+    "message": "First time creating an account? Even if you've used Revisionist History before, you'll need to create an account to continue.",
     "description": "Banner message explaining that existing users need to create an account"
   },
   "auth_signup_tooltip": {
@@ -536,7 +536,7 @@
     }
   },
   "upgrade_message": {
-    "message": "We <em>never</em> imagined so many educators would use our product. We're grateful, to say the least. With 150k+ educators now using Revision History, subscribing unlocks unlimited docs analysis and funds ongoing support and improvements.",
+    "message": "We <em>never</em> imagined so many educators would use our product. We're grateful, to say the least. With 150k+ educators now using Revisionist History, subscribing unlocks unlimited docs analysis and funds ongoing support and improvements.",
     "description": "Message explaining the need for subscriptions"
   },
   "upgrade_value_proposition": {

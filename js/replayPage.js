@@ -14581,7 +14581,7 @@
                 S = (0, t.useState)(0),
                 z = S[0],
                 E = S[1],
-                C = (0, t.useState)(2),
+                C = (0, t.useState)(4),
                 N = C[0],
                 j = C[1],
                 P = (0, t.useState)([]),
@@ -14594,6 +14594,8 @@
                   { interval: 100, display: "2x" },
                   { interval: 50, display: "4x" },
                   { interval: 25, display: "8x" },
+                  { interval: 12.5, display: "16x" },
+                  { interval: 6.25, display: "32x" },
                 ];
               (0, t.useEffect)(function () {
                 chrome.runtime.sendMessage(
@@ -14994,6 +14996,20 @@
                                   },
                                 ),
                               ),
+                              (0, n.jsx)(
+                                G, {
+                                  value: N,
+                                  min: 0,
+                                  max: R.length-1,
+                                  onChange: function (n) {
+                                      j(Math.round(n));
+                                      k(false);
+
+                                  },
+                                  className: "rc-slider",
+                                }
+                              ),
+
                             ],
                           },
                         ),
