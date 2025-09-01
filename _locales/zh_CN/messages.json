@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "立即激活免费文档回放",
+    "message": "查看完整历史 → 使用Google登录",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

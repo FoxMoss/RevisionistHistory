@@ -88,7 +88,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Kliknij tutaj, aby zalogować się do Historii Zmian",
+    "message": "Zobacz pełną historię → Zaloguj się przez Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

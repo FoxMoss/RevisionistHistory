@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "무료 문서 재생 기능을 지금 활성화하세요",
+    "message": "전체 히스토리 보기 → Google로 로그인",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

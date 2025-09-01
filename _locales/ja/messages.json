@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "無料のドキュメント再生を今すぐ有効化",
+    "message": "完全な履歴を表示 → Googleでサインイン",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

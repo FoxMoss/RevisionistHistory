@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Aktivera gratis dokumentuppspelning nu",
+    "message": "Visa fullständig historik → Logga in med Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

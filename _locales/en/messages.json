@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Revisionist History",
+    "message": "Revision History",
     "description": "The name of the extension"
   },
   "extDescription": {
@@ -631,4 +631,4 @@
     "message": "Account Settings",
     "description": "Tooltip for the account settings button"
   }
-}
+} 

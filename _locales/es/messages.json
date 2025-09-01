@@ -68,7 +68,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Activa la reproducción gratuita de documentos ahora",
+    "message": "Ver historial completo → Iniciar sesión con Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

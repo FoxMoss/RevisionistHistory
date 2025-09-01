@@ -68,7 +68,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Aktivieren Sie jetzt die kostenlose Dokumentwiedergabe",
+    "message": "Vollständigen Verlauf anzeigen → Mit Google anmelden",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

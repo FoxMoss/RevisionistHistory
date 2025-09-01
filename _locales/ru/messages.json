@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Активируйте бесплатное воспроизведение документа сейчас",
+    "message": "Показать полную историю → Войти через Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {
