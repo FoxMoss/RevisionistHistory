@@ -68,7 +68,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Attiva ora la riproduzione gratuita del documento",
+    "message": "Visualizza cronologia completa → Accedi con Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

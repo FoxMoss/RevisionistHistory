@@ -68,7 +68,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Clique aqui para iniciar sessão no Histórico de Revisões",
+    "message": "Ver histórico completo → Iniciar sessão com Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

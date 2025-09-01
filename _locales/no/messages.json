@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Klikk her for å logge inn på Revisjonshistorikk",
+    "message": "Se fullstendig historikk → Logg inn med Google",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

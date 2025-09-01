@@ -72,7 +72,7 @@
     "description": "Error message when no edit access"
   },
   "login_prompt": {
-    "message": "Klikkaa tästä kirjautuaksesi Muutoshistoriaan",
+    "message": "Näytä koko historia → Kirjaudu Googlen kautta",
     "description": "Login prompt text"
   },
   "analytics_patterns_normal": {

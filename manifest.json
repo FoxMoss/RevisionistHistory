@@ -1,7 +1,7 @@
 {
 "update_url": "https://clients2.google.com/service/update2/crx",
 
-  "version": "1.4.5",
+  "version": "1.5.4",
   "manifest_version": 3,
   "default_locale": "en",
   "name": "__MSG_extName__",
@@ -50,5 +50,19 @@
   ],
   "permissions": [
     "storage"
-  ]
+  ],
+  "oauth2": {
+    "client_id": "389797709134-2du4ec6iv2ndmi7449gikhmnd8iokv6b.apps.googleusercontent.com",
+    "scopes": ["openid", "email", "profile"]
+  },
+  "externally_connectable": {
+    "matches": [
+      "https://localhost:3000/*", 
+      "http://localhost:3000/*",
+      "https://extension.revisionhistory.com/*",
+      "https://revisionhistory.com/*",
+      "https://www.revisionhistory.com/*",
+      "https://*.vercel.app/*"
+    ]
+  }
 }
