@@ -1,6 +1,10 @@
 /*! For license information please see replayPage.js.LICENSE.txt */
 document.addEventListener("DOMContentLoaded", () => {
-  posthog.init('phc_4SgiMSLzJJCoo7Gff9m6z14jwnL4g8mDLRc5a43yRAY',{api_host:'https://us.i.posthog.com', defaults:'2025-05-24', disable_external_dependency_loading: true})
+  posthog.init("phc_4SgiMSLzJJCoo7Gff9m6z14jwnL4g8mDLRc5a43yRAY", {
+    api_host: "https://us.i.posthog.com",
+    defaults: "2025-05-24",
+    disable_external_dependency_loading: true,
+  });
   posthog.capture("replay");
 });
 (() => {
@@ -18317,8 +18321,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 o(t);
                 if (t.length !== 0) {
                   try {
-                      posthog.capture("user_viewed", { users: t.map((id) => c[id])});
-                  }catch(n){console.log(n)}
+                    posthog.capture("user_viewed", {
+                      users: t.map((id) => c[id]),
+                    });
+                  } catch (n) {
+                    console.log(n);
+                  }
                 }
               } catch (n) {
                 (X("An error occurred loading tab data."), Y(!1));

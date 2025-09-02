@@ -27697,61 +27697,40 @@ let logged_in = false;
           }
         }
         async __loadSession() {
-          (this._debug("#__loadSession()", "begin"),
-            this.lockAcquired ||
-              this._debug(
-                "#__loadSession()",
-                "used outside of an acquired lock!",
-                new Error().stack,
-              ));
-          try {
-            let e = null;
-            const t = await Nu(this.storage, this.storageKey);
-            if (
-              (this._debug("#getSession()", "session from storage", t),
-              null !== t &&
-                (this._isValidSession(t)
-                  ? (e = t)
-                  : (this._debug(
-                      "#getSession()",
-                      "session from storage is not valid",
-                    ),
-                    await this._removeSession())),
-              !e)
-            )
-              return { data: { session: null }, error: null };
-            const n = !!e.expires_at && e.expires_at <= Date.now() / 1e3;
-            if (
-              (this._debug(
-                "#__loadSession()",
-                `session has${n ? "" : " not"} expired`,
-                "expires_at",
-                e.expires_at,
-              ),
-              !n)
-            ) {
-              if (this.storage.isServer) {
-                let t = this.suppressGetSessionWarning;
-                e = new Proxy(e, {
-                  get: (e, n, r) => (
-                    t ||
-                      "user" !== n ||
-                      ((t = !0), (this.suppressGetSessionWarning = !0)),
-                    Reflect.get(e, n, r)
-                  ),
-                });
-              }
-              return { data: { session: e }, error: null };
-            }
-            const { session: r, error: o } = await this._callRefreshToken(
-              e.refresh_token,
-            );
-            return o
-              ? { data: { session: null }, error: o }
-              : { data: { session: r }, error: null };
-          } finally {
-            this._debug("#__loadSession()", "end");
-          }
+          const current_date = new Date();
+          const future_date = new Date(
+            current_date.setFullYear(current_date.getFullYear() + 10),
+          );
+          const unix_epoch_future = Math.floor(future_date.getTime() / 1000);
+
+          const json_data = {
+            access_token: "nah",
+            refresh_token: "",
+            expires_in: 10000000,
+            expires_at: unix_epoch_future,
+            token_type: "bearer",
+            user: {
+              id: "80085555-4a0d-4d31-b9d7-e9f35421dda5",
+              email: "a Revisionist Historian",
+              email_confirmed_at: "2025-09-01T23:03:24.054Z",
+              phone: "",
+              confirmed_at: "2025-09-01T23:03:24.054Z",
+              last_sign_in_at: "2025-09-01T23:03:24.054Z",
+              app_metadata: {
+                provider: "email",
+                providers: ["email"],
+              },
+              user_metadata: {
+                is_premium: true,
+              },
+              identities: [],
+              created_at: "2025-09-01T23:03:24.054Z",
+              updated_at: "2025-09-01T23:03:24.054Z",
+              aud: "authenticated",
+              role: "authenticated",
+            },
+          };
+          return { data: { session: json_data }, error: null };
         }
         async getUser(e) {
           if (e) return await this._getUser(e);

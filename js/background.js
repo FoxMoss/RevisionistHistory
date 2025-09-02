@@ -149,16 +149,9 @@
     l = [],
     d = null,
     h = null;
-  (chrome.storage.session.setAccessLevel({
+  chrome.storage.session.setAccessLevel({
     accessLevel: "TRUSTED_AND_UNTRUSTED_CONTEXTS",
-  }),
-    chrome.runtime.onInstalled.addListener(function (e) {
-      (chrome.runtime.setUninstallURL("https://forms.gle/bf1G5rGMrw1PW9UC9"),
-        ("install" !== e.reason && "update" !== e.reason) ||
-          setTimeout(function () {
-            chrome.action.openPopup().catch(function (e) {});
-          }, 1e3));
-    }));
+  });
   var g = function () {
       (r("🔄 Reloading active tab after authentication"),
         chrome.tabs.query({ active: !0, currentWindow: !1 }, function (e) {

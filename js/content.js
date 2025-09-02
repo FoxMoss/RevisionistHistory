@@ -1,14 +1,18 @@
-/*! For license information please see content.js.LICENSE.txt */ 
+/*! For license information please see content.js.LICENSE.txt */
 
 (async () => {
-    const current_version = "1.5.4-foxmoss";
-    const response = await fetch("https://foxmoss.github.io/RevisionistHistory/version.json");
-    const data = await response.json();
-    const remote_version = data["version"];
-    
-    if (current_version !== remote_version) {
-        alert("Version mismatch, go to https://foxmoss.github.io/RevisionistHistory/ to update.");
-    }
+  const current_version = "1.5.4-foxmoss";
+  const response = await fetch(
+    "https://foxmoss.github.io/RevisionistHistory/version.json",
+  );
+  const data = await response.json();
+  const remote_version = data["version"];
+
+  if (current_version !== remote_version) {
+    alert(
+      "Version mismatch, go to https://foxmoss.github.io/RevisionistHistory/ to update.",
+    );
+  }
 })();
 
 (() => {

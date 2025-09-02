@@ -12,7 +12,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://docs.google.com/*", "*://classroom.google.com/*", "*://*.posthog.com/*"],
+      "matches": [
+        "*://docs.google.com/*",
+        "*://classroom.google.com/*",
+        "*://*.posthog.com/*"
+      ],
       "all_frames": true,
       "js": ["js/content.js"]
     }
@@ -41,7 +45,7 @@
   },
   "host_permissions": ["*://*.google.com/*", "*://*.posthog.com/*"],
   "content_security_policy": {
-        "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://*.posthog.com;"
-    },
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://*.posthog.com;"
+  },
   "permissions": ["storage"]
 }
