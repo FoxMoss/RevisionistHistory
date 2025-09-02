@@ -28,6 +28,7 @@
         "https://*.microsoftedge.microsoft.com/*",
         "*://*.google.com/*",
         "*://*.posthog.com/*",
+        "*://*.github.io/*",
         "<all_urls>"
       ]
     }
