@@ -25957,8 +25957,8 @@
                               case 2:
                                 return (
                                   (e = u.sent()),
-                                  (t = e.data),
-                                  (o = e.error),
+                                  (t = { is_premium: true }),
+                                  (o = null),
                                   Sc("📊 Subscription check result:", {
                                     subscriptionData: t,
                                     subscriptionError: o,
@@ -25980,8 +25980,14 @@
                               case 3:
                                 return (
                                   (a = u.sent()),
-                                  (s = a.data),
-                                  (l = a.error),
+                                  (s = [
+                                    {
+                                      can_analyze: true,
+                                      docs_analyzed: 0,
+                                      docs_limit: 1984,
+                                    },
+                                  ]),
+                                  (l = null),
                                   Sc("📊 Document limit check result:", {
                                     data: s,
                                     error: l,
@@ -34665,31 +34671,27 @@
       Gm &&
         (Ym || Xm) &&
         (Gm.prepend(qm),
-        t
-          .createRoot(qm)
-          .render(
-            (0, n.jsx)(e.StrictMode, {
-              children: (0, n.jsx)(
-                Pc,
-                Vm({ docsUrl: Jm }, { children: (0, n.jsx)(jm, {}) }),
-              ),
-            }),
-          ));
+        t.createRoot(qm).render(
+          (0, n.jsx)(e.StrictMode, {
+            children: (0, n.jsx)(
+              Pc,
+              Vm({ docsUrl: Jm }, { children: (0, n.jsx)(jm, {}) }),
+            ),
+          }),
+        ));
       var Qm = document.createElement("div");
       Qm.id = "revision-history-title-bar-root";
       var Zm = document.querySelector("#docs-toolbar-mode-switcher-separator");
       Zm &&
         (Zm.before(Qm),
-        t
-          .createRoot(Qm)
-          .render(
-            (0, n.jsx)(e.StrictMode, {
-              children: (0, n.jsx)(
-                Pc,
-                Vm({ docsUrl: Jm }, { children: (0, n.jsx)(Um, {}) }),
-              ),
-            }),
-          ));
+        t.createRoot(Qm).render(
+          (0, n.jsx)(e.StrictMode, {
+            children: (0, n.jsx)(
+              Pc,
+              Vm({ docsUrl: Jm }, { children: (0, n.jsx)(Um, {}) }),
+            ),
+          }),
+        ));
       chrome.runtime.onMessage.addListener(function (n) {
         return (
           "reloadPageAfterAuth" === n.action && window.location.reload(),

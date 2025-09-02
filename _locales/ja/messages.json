@@ -605,4 +605,4 @@
     "message": "無料ユーザーは月に最大150の固有ドキュメントを分析できます。このカウンターは毎月1日にリセットされます。",
     "description": "Tooltip explaining the document counter limit"
   }
-} 
+}

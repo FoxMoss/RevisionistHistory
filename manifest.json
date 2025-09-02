@@ -1,5 +1,5 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "version": "1.5.4",
   "manifest_version": 3,
@@ -12,14 +12,9 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "*://docs.google.com/*",
-        "*://classroom.google.com/*"
-      ],
+      "matches": ["*://docs.google.com/*", "*://classroom.google.com/*"],
       "all_frames": true,
-      "js": [
-        "js/content.js"
-      ]
+      "js": ["js/content.js"]
     }
   ],
   "background": {
@@ -27,10 +22,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": [
-        "js/*",
-        "images/*"
-      ],
+      "resources": ["js/*", "images/*"],
       "matches": [
         "*://docs.google.com/*",
         "https://*.microsoftedge.microsoft.com/*",
@@ -45,10 +37,6 @@
     "48": "images/black-logo-48.png",
     "128": "images/black-logo-128.png"
   },
-  "host_permissions": [
-    "*://*.google.com/*"
-  ],
-  "permissions": [
-    "storage"
-  ]
+  "host_permissions": ["*://*.google.com/*"],
+  "permissions": ["storage"]
 }

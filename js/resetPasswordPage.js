@@ -31526,27 +31526,25 @@
         hm = document.createElement("div");
       ((hm.className = "revision-history-container"),
         document.body.appendChild(hm),
-        r
-          .createRoot(hm)
-          .render(
-            (0, n.jsxs)(e.StrictMode, {
-              children: [
-                (0, n.jsx)(
-                  zc,
-                  bm(
-                    { sx: { position: "fixed", top: 16, left: 16 } },
-                    {
-                      children: (0, n.jsx)("img", {
-                        src: chrome.runtime.getURL("images/black-logo.png"),
-                        alt: "Revision History",
-                        style: { height: 40 },
-                      }),
-                    },
-                  ),
+        r.createRoot(hm).render(
+          (0, n.jsxs)(e.StrictMode, {
+            children: [
+              (0, n.jsx)(
+                zc,
+                bm(
+                  { sx: { position: "fixed", top: 16, left: 16 } },
+                  {
+                    children: (0, n.jsx)("img", {
+                      src: chrome.runtime.getURL("images/black-logo.png"),
+                      alt: "Revision History",
+                      style: { height: 40 },
+                    }),
+                  },
                 ),
-                (0, n.jsx)(fm, {}),
-              ],
-            }),
-          ));
+              ),
+              (0, n.jsx)(fm, {}),
+            ],
+          }),
+        ));
     })());
 })();

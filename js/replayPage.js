@@ -18186,7 +18186,7 @@
           R = (0, t.useState)(0),
           T = R[0],
           O = R[1],
-          P = (0, t.useState)(2),
+          P = (0, t.useState)(4),
           M = P[0],
           L = P[1],
           I = (0, t.useState)([]),
@@ -18240,6 +18240,8 @@
             { interval: 100, display: "2x" },
             { interval: 50, display: "4x" },
             { interval: 25, display: "8x" },
+            { interval: 12.5, display: "16x" },
+            { interval: 6.25, display: "32x" },
           ];
         ((0, t.useEffect)(function () {
           chrome.runtime.sendMessage(
@@ -18770,6 +18772,19 @@
                                                       variant: "secondary",
                                                       size: "sm",
                                                       onClick: function () {
+                                                        return en(true);
+                                                      },
+                                                    },
+                                                    { children: "Export" },
+                                                  ),
+                                                ),
+                                                (0, n.jsx)(
+                                                  ko,
+                                                  Ii(
+                                                    {
+                                                      variant: "secondary",
+                                                      size: "sm",
+                                                      onClick: function () {
                                                         return m(0);
                                                       },
                                                       disabled: N,
@@ -18838,6 +18853,15 @@
                                             },
                                           ),
                                         ),
+                                        (0, n.jsx)(Z, {
+                                          value: M,
+                                          min: 0,
+                                          max: gn.length - 1,
+                                          onChange: function (n) {
+                                            L(Math.round(n));
+                                          },
+                                          className: "rc-slider",
+                                        }),
                                       ],
                                     },
                                   ),
@@ -19241,7 +19265,7 @@
                                   },
                                 ),
                               ),
-e                             un &&
+                              un &&
                                 (0, n.jsxs)(n.Fragment, {
                                   children: [
                                     (0, n.jsxs)(

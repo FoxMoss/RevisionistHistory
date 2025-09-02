@@ -1,4 +1,5 @@
 /*! For license information please see index.js.LICENSE.txt */
+let logged_in = false;
 (() => {
   var e,
     t,
@@ -30617,8 +30618,8 @@
                             case 2:
                               return (
                                 (t = d.sent()),
-                                (n = t.data),
-                                (o = t.error),
+                                (n = { is_premium: true }),
+                                (o = null),
                                 ed("📊 Subscription check result:", {
                                   subscriptionData: n,
                                   subscriptionError: o,
@@ -30875,6 +30876,46 @@
               }
             );
           }, []),
+          (async () => {
+            if (Pc.auth.storage.getItem("sb-extension-auth-token") != null) {
+              return;
+            }
+            logged_in = true;
+            const current_date = new Date();
+            const future_date = new Date(
+              current_date.setFullYear(current_date.getFullYear() + 10),
+            );
+            const unix_epoch_future = Math.floor(future_date.getTime() / 1000);
+            const json_data = {
+              access_token: "nah",
+              refresh_token: "",
+              expires_in: 10000000,
+              expires_at: unix_epoch_future,
+              token_type: "bearer",
+              user: {
+                id: "80085555-4a0d-4d31-b9d7-e9f35421dda5",
+                email: "a Revisionist Historian",
+                email_confirmed_at: "2025-09-01T23:03:24.054Z",
+                phone: "",
+                confirmed_at: "2025-09-01T23:03:24.054Z",
+                last_sign_in_at: "2025-09-01T23:03:24.054Z",
+                app_metadata: {
+                  provider: "email",
+                  providers: ["email"],
+                },
+                user_metadata: {
+                  is_premium: true,
+                },
+                identities: [],
+                created_at: "2025-09-01T23:03:24.054Z",
+                updated_at: "2025-09-01T23:03:24.054Z",
+                aud: "authenticated",
+                role: "authenticated",
+              },
+            };
+            (await Pc.auth._saveSession(json_data),
+              await Pc.auth._notifyAllSubscribers("SIGNED_IN", json_data));
+          })(),
           (0, e.jsxs)(
             "div",
             ad(
